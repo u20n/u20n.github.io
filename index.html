@@ -6,13 +6,23 @@
         <link rel="stylesheet" href="css/global.css">
         <!-- Overriding to possible page specific styles -->
         <link rel="stylesheet" href="css/index.css">
+        <!-- js for stuff -->
+        <script type="text/javascript" src="js/index.js"></script>
     </head>
     <body>
-        <text>
-            hey my name is uTon and I like computers
-        </text>
-        <text>
-            check out my current project, concord
-        </text>
+        <notice>
+            <!-- Notice -->
+            <span class="alert">
+                <b>Notice: </b>This site is under construction | 
+                <small>Some links and content may be broken</small>
+            </span>
+            <!-- Close Button-->
+            <span class="close" onclick="this.parentNode.parentNode.removeChild(this.parentNode);">[Close]</span>
+        </notice>
+        <navbar>
+            <navbutton><a href="index.html">/cd ..</a></navbutton>
+            <navbutton><a href="html/notes.html">/notes</a></navbutton>
+            <navbutton><a href="html/projects.html">/projects</a></navbutton>
+        </navbar>
     </body>
 </html>

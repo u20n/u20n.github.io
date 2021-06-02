@@ -1,5 +1,5 @@
 body {
-background-color: #1E2225;
+    background-color: #1E2225;
 }
   
 h1 {
@@ -9,6 +9,6 @@ text-align: center;
 text {
     font: Ubuntu Monospace;
     color: #A7CACA;
-    font-size: 20px;
+    font-size: 15px;
     margin: 50px;
 }
