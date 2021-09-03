@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: regular;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://notu.dev/fonts/UbuntuMono-Regular.ttf) format('ttf');
+}
+
+
 body {
     background-color: #1E2225;
     font-family: Ubuntu;
@@ -7,6 +15,7 @@ h1 {
 color: white;
 text-align: center;
 }
+
 text {
     font: Ubuntu Monospace;
     color: #A7CACA;
