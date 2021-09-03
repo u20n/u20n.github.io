@@ -1,10 +1,18 @@
 table,
 td {
-    border: 1px solid #333;
+    border: 1px solid #04052E;
 }
 
 thead,
 tfoot {
-    background-color: #333;
-    color: #fff;
+    background-color: #4F6D7A;
+    color: #191B24;
+}
+
+mark {
+  color: #22007C;
+}
+
+br {
+  color: #4F6D7A;
 }
