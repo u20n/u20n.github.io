@@ -1,49 +1,18 @@
-/** Nav bar*/
-navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
+body {
+    background-color: #1E2225;
 }
-navbutton {
-    float: left;
+
+h1 {
+color: white;
+text-align: center;
+}
+text {
     font: Ubuntu Monospace;
-    font-size: 20px;
-}
-navbutton a {
     color: #A7CACA;
-    display: block;
-    text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-}
-navbutton a:hover {
-    color: white;
+    font-size: 15px;
+    margin: 50px;
 }
 
-/** Notification */
-notice {
-    position: absolute;
-    z-index: 101;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: red;
-    text-align: center;
-    line-height: 2.5;
-    overflow: hidden;
+a {
+  color: #CB56DF;
 }
-notice .close {
-    display: none;
-}
-/** display close on hover*/
-notice:hover .alert{
-    display: none;
-}
-notice:hover .close {
-    display: inline;
-}
-
