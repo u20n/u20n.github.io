@@ -1,4 +1,9 @@
 html {
   background-color: #323031;
   color: #A89b8c;
+  font-family: monospace, monospace;
+}
+
+a {
+  color: #F4D58D;
 }
