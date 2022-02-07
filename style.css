@@ -1,7 +1,8 @@
 html {
   background-color: #323031;
   color: #A89b8c;
-  font-family: monospace, monospace;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
 }
 
 a {
