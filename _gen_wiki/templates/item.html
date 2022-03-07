@@ -1,0 +1,15 @@
+<article>
+    <section class="header">
+        $if(date)$
+          ~/$date$
+        $endif$
+    </section>
+    <section class="info">
+      $if(tags)$
+        tagged; $tags$
+      $endif$
+    </section>
+    <section>
+        $body$
+    </section>
+</article>
