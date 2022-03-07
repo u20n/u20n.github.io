@@ -20,8 +20,8 @@ This necessary exclusion of bodies would eventually create a slip in accuracy be
 
 *How then, to account for this slip? I have no idea.*
 
-One way to account for this would be taking the greatest of set $Nx$, where 
-$$e : Nx \implies e : \begin{cases} e \notin x\\ e \exists! \in Nx \\e = max\{Nx\} \end{cases}$$  and including $e$ in each subsequent calculation. This, however, just pushes the slip one level down; there's now a slip of threshold in each calculation and no real improvement of the situation.
+One way to account for this would be taking the greatest of set $N_x$, where 
+$$e : N_x \implies e : \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e = max\{N_x\} \end{cases}$$  and including $e$ in each subsequent calculation. This, however, just pushes the slip one level down; there's now a slip of threshold in each calculation and no real improvement of the situation.
 
 
 
