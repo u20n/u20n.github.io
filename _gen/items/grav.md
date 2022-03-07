@@ -15,7 +15,7 @@ Actually *accurately* simulating the entire universe is a foolish task. All bodi
 
 How then, to account for this slip? I have no idea.
 
-One way to account for this would be taking the greastest of set $Nx$, where 
+One way to account for this would be taking the greatest of set $Nx$, where 
 $$e : Nx \implies e : \begin{cases} e \notin x\\ e \exists! \in Nx \\e = max\{Nx\} \end{cases}$$  and including $e$ in each subsequent calculation. This however, just pushes the slip one level down; there's now a slip in threshold each calculation and no real improvement of the situation.
 
 
