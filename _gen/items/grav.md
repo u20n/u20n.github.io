@@ -8,7 +8,7 @@ status: incomplete
 
 #### this document contains various notes on essentially astrophysics
 
-In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approximate universe, obviusly a very large endevor, I seek to understand and condense the interactions between bodies in space, and forumalte it to a set of functions and variables to represent any encounter between two bodies in space. Actually *accurately* simulating the entire universe is a foolish task. This is mainly presented as a thought excersice.
+In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approximate universe, obviusly a very large endevor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually *accurately* simulating the entire universe is a foolish task. This is mainly presented as a thought excersice.
 
 **degredation of accuracy and acceptable degrees**
 
@@ -16,7 +16,7 @@ All bodies of some mass have impact on the movements of the others. While discou
 
 $\small {\text{Where }x\text{ is some force, }t\text{ is some threshold, }z\text{ is gravitational force of }x\text{, and }F_x \text{ is a set of all influential bodies.}}$
 
-This necessary exclusion of bodies would eveuntually create a slip in accuracy beyond the marginal degree.
+This necessary exclusion of bodies would eventually create a slip in accuracy beyond the marginal degree.
 
 *How then, to account for this slip? I have no idea.*
 
