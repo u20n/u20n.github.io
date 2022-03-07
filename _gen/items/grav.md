@@ -12,11 +12,11 @@ In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approx
 
 **degredation of accuracy and acceptable degrees**
 
-All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold; ex. $$F_x : \{x \nless \lfloor z - t\rfloor \}$$
+All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; ex. $$F_x : \{x \nless \lfloor z - t\rfloor \}$$
 
 $\small {\text{Where }x\text{ is some force, }t\text{ is some threshold, }z\text{ is gravitational force of }x\text{, and }F_x \text{ is a set of all influential bodies.}}$
 
-While this classification may be worthwhile, eventually the exclusion of bodies would create a slip.
+This necessary exclusion of bodies would eveuntually create a slip in accuracy beyond the marginal degree.
 
 *How then, to account for this slip? I have no idea.*
 
@@ -25,7 +25,7 @@ $$e : Nx \implies e : \begin{cases} e \notin x\\ e \exists! \in Nx \\e = max\{Nx
 
 
 
-**time, and other fun nuances**
+**time as an influence**
 
 Given that Einsteinian physics is a cooler system, time is going to be considered with this simulation. To help myself visualize the 4th dimension, and to succinctly explain my rationale, a $\underline{\text{simple}}$ metaphor will be used. Imagine, if you will, the 4th dimension as a photo camera. A still frame is taken of the 3rd dimension[^still]; these images, overlaid in order, become a body's experience of the 4th dimension. Time, in this system, exists as the frame-rate of the camera; the closer to light speed a body is, the slower its relative time. In our metaphor, this would be represented as the gaps between each frame.
 
