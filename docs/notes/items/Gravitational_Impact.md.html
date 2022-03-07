@@ -39,7 +39,7 @@
 <p><strong>the very, very, basics</strong></p>
 <p>Actually <em>accurately</em> simulating the entire universe is a foolish task. All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold; ex. <span class="math inline">\(x : \{x \nless \lfloor t - z\rfloor \}\)</span>, where <span class="math inline">\(x\)</span> is some force, <span class="math inline">\(t\)</span> is some threshold, and <span class="math inline">\(z\)</span> is gravitational force of some body, might be worthwhile, eventually the small differences would create a slip.</p>
 <p>How then, to account for this slip? I have no idea.</p>
-<p>One way to account for this would be taking the greastest of set <span class="math inline">\(Nx\)</span>, where <span class="math inline">\(e : Nx \implies e \notin x\)</span>, and includsing it in each subsequent calculation. This however, just pushes the slip one level down; now there’s a slip in threshold each calculation and no real improvement of the situation.</p>
+<p>One way to account for this would be taking the greastest of set <span class="math inline">\(Nx\)</span>, where <span class="math display">\[e : Nx \implies e : \begin{cases} e \notin x\\ e \exists! \in Nx \\e = max\{Nx\} \end{cases}\]</span> and including <span class="math inline">\(e\)</span> in each subsequent calculation. This however, just pushes the slip one level down; there’s now a slip in threshold each calculation and no real improvement of the situation.</p>
     </section>
 </article>
 
