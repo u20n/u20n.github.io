@@ -4,7 +4,7 @@ import Data.Monoid (mappend)
 import Data.Typeable
 
 -- latex
-import           Text.Pandoc.Options
+import Text.Pandoc.Options
 
 import Hakyll
 --------------------------------------------------------------------------------
@@ -67,13 +67,15 @@ main = hakyllWith config $ do
 --------------------------------------------------------------------------------
 iCtx::Context String
 iCtx =
-    -- TODO: actually fix date
+    dateField "date" "%m.%d.%0Y" `mappend`
     defaultContext
 
 {-#
 iCtxTags :: Tags -> Context String
 iCtxTags tags = tagsField "tags" tags `mappend` iCtx
 #-}
+
+--------------------------------------------------------------------------------
 
 pandocMathCompiler =
     let mathExtensions    = extensionsFromList [Ext_tex_math_dollars, Ext_tex_math_double_backslash, Ext_latex_macros]

@@ -1,12 +1,15 @@
 <article>
     <section class="header">
         $if(date)$
-          ~/$date$
+          pub: $date$
         $endif$
     </section>
     <section class="info">
       $if(tags)$
-        tagged; $tags$
+        $tags$
+      $endif$
+      $if(status)$
+        | [$status$]
       $endif$
     </section>
     <section>

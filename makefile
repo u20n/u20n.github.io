@@ -6,3 +6,7 @@ default:
 #rebuild site exe
 r:
 	cd _gen; stack build; stack exec site rebuild
+
+#preview
+p:
+	cd docs/notes; firefox index.html
