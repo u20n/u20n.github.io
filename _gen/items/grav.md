@@ -8,7 +8,7 @@ status: incomplete
 
 #### this document contains various notes on essentially astrophysics
 
-In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approximate universe, obviusly a very large endevor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually *accurately* simulating the entire universe is a foolish task. This is mainly presented as a thought excersice.
+In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approximate universe, obviously a very large endeavor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually *accurately* simulating the entire universe is a foolish task. This is mainly presented as a thought exercise.
 
 **degredation of accuracy and acceptable degrees**
 
@@ -21,7 +21,7 @@ This necessary exclusion of bodies would eventually create a slip in accuracy be
 *How then, to account for this slip? I have no idea.*
 
 One way to account for this would be taking the greatest of set $Nx$, where 
-$$e : Nx \implies e : \begin{cases} e \notin x\\ e \exists! \in Nx \\e = max\{Nx\} \end{cases}$$  and including $e$ in each subsequent calculation. This however, just pushes the slip one level down; there's now a slip in threshold each calculation and no real improvement of the situation.
+$$e : Nx \implies e : \begin{cases} e \notin x\\ e \exists! \in Nx \\e = max\{Nx\} \end{cases}$$  and including $e$ in each subsequent calculation. This, however, just pushes the slip one level down; there's now a slip of threshold in each calculation and no real improvement of the situation.
 
 
 
