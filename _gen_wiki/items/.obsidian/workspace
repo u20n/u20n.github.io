@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "a29d6b98e551f853",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0d0806646a5c577",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Gravitational_Impact.md.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dc9f55580d698275",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec5db0fe5b020e4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48ed8443ada96f89",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "34fd9d0cf9c718b0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "46c3a0ad7d8bba29",
+    "type": "split",
+    "children": [
+      {
+        "id": "170eb90a02bdec95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0112e708dc1c56e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Gravitational_Impact.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e0d0806646a5c577",
+  "lastOpenFiles": [
+    "Gravitational_Impact.md.md",
+    "board.md",
+    "test.md"
+  ]
+}
