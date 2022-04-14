@@ -45,5 +45,5 @@ Given that Einsteinian physics is a cooler system, time is going to be considere
 [^notation]: This notation is pretty spooky; essentially that there exists $\gt1$ of $x$ for all $x : F_x$.
 [^eventually]: This is a little misleading; if the relational force is the same across the entire system, nothing will ever move out of the *perfect* sequence in any substantial way without external force.
 [^sowhat]: This is bad because it's boring.
-[^flame]: This disclaimer means you can't yell at me on twitter. Acception of this wavier of your right to flame me online will be the continued reading of this footnote.
+[^flame]: This disclaimer means you can't yell at me on twitter. Acceptance of this wavier of your right to flame me online will be the continued reading of this footnote.
 [^still]: Without the 4th dimension, the 3d dimension has no concept of time, so it kind of just exists without concrete, well, time. Taking a still requires the concept of time (via reflection), and so I consider this precis valid, while admittedly marginally confusing.
