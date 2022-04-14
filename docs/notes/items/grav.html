@@ -24,36 +24,58 @@
         </header>
 
         <main role="main">
-            <h1>headaches but with gravity</h1>
+            <h1>headaches w/ gravity</h1>
             <article>
     <section class="header">
         
-          pub: 07.03.2022
+          pub: 04.13.2022
         
     </section>
     <section class="info">
       
-        math, physics
+        math, physics, astro
       
       
         | [incomplete]
       
     </section>
     <section>
-        <h4 id="this-document-contains-various-notes-on-essentially-astrophysics">this document contains various notes on essentially astrophysics</h4>
+        <h6 id="section-list">Section List</h6>
+<ul>
+<li>overview &amp; necessary disclaimer</li>
+<li>degredation of accuracy and acceptable degrees
+<ul>
+<li>interactions of the 3D</li>
+<li>physical interactions between bodies</li>
+<li>acceptable degrees of error</li>
+</ul></li>
+<li>time as an influence
+<ul>
+<li>time as a meter</li>
+<li>4d in its interactions with the aforementioned 3d system</li>
+</ul></li>
+</ul>
+<h5 id="overview">Overview</h5>
 <p>In the pursuit of a <span class="math inline">\(\underline{\text{workable}}\)</span> platform to simulate an approximate universe, obviously a very large endeavor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually <em>accurately</em> simulating the entire universe is a foolish task. This is mainly presented as a thought exercise.</p>
-<p><strong>degredation of accuracy and acceptable degrees</strong></p>
-<p>All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; ex. <span class="math display">\[F_x : \{x \nless \lfloor z - t\rfloor \}\]</span></p>
-<p><span class="math inline">\(\small {\text{Where }x\text{ is some force, }t\text{ is some threshold, }z\text{ is gravitational force of }x\text{, and }F_x \text{ is a set of all influential bodies.}}\)</span></p>
-<p>This necessary exclusion of bodies would eventually create a slip in accuracy beyond the marginal degree.</p>
-<p><em>How then, to account for this slip? I have no idea.</em></p>
+<h5 id="degradation-of-accuracy-and-acceptable-degrees">Degradation of Accuracy and Acceptable Degrees</h5>
+<p><strong>… in a simulated system</strong></p>
+<p>All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; ex. <span class="math display">\[F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}\]</span></p>
+<blockquote>
+<p>Where <span class="math inline">\(x\)</span> is measure of influence<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, <span class="math inline">\(t\)</span> is some threshold, <span class="math inline">\(z\)</span> is relative gravitational force of <span class="math inline">\(b\)</span> taken at constant distance, and <span class="math inline">\(F_x\)</span> is a set of all influential <span class="math inline">\(b\)</span>, <span class="math inline">\(\forall\)</span> bodies <span class="math inline">\(b\)</span>. <em>Note</em> While I take the influence as a floored number, any variation (closest is <span class="math inline">\(\lfloor ... \rceil\)</span>) suffices; as long as it is constant across <span class="math inline">\(x\)</span>.</p>
+</blockquote>
+<p>This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree.</p>
+<p><em>How then, to account for this slip? I have no idea. (lol)</em></p>
 <p>One way to account for this would be taking the greatest of set <span class="math inline">\(N_x\)</span>, where <span class="math display">\[e : N_x \implies e : \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e = max\{N_x\} \end{cases}\]</span> and including <span class="math inline">\(e\)</span> in each subsequent calculation. This, however, just pushes the slip one level down; there’s now a slip of threshold in each calculation and no real improvement of the situation.</p>
-<p><strong>time as an influence</strong></p>
-<p>Given that Einsteinian physics is a cooler system, time is going to be considered with this simulation. To help myself visualize the 4th dimension, and to succinctly explain my rationale, a <span class="math inline">\(\underline{\text{simple}}\)</span> metaphor will be used. Imagine, if you will, the 4th dimension as a photo camera. A still frame is taken of the 3rd dimension<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>; these images, overlaid in order, become a body’s experience of the 4th dimension. Time, in this system, exists as the frame-rate of the camera; the closer to light speed a body is, the slower its relative time. In our metaphor, this would be represented as the gaps between each frame.</p>
+<p>It may make sense to impose some sense of <em>inherited</em> order on the actual count of bodies in the <span class="math inline">\(F_x\)</span> set, but that would, like the set of <span class="math inline">\(N_x\)</span>, only push the slip further down, rather than solve it. Almost all solutions have this slip, and hence we must account for the degradation of accuracy, and the acceptable degrees of error.</p>
+<h5 id="time-as-an-influence">Time as an Influence</h5>
+<p><strong>…(and Willing Participant)</strong></p>
+<p>Given that Einsteinian physics is a cooler system, time is going to be considered with this simulation. To help myself visualize the 4th dimension, and to succinctly explain my rationale, a <em>simple</em> metaphor will be used<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Imagine, if you will, the 4th dimension as a photo camera. A still frame is taken of the 3rd dimension<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>; these images, overlaid in order, become a body’s experience of the 4th dimension. Time, in this system, exists as the frame-rate of the camera; the closer to light speed a body is, the slower its relative time. In our metaphor, this would be represented as the gaps between each frame.</p>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>Without the 4th dimension, the 3d dimension has no concept of time, so it kind of just exists without concrete, well, time. Taking a still requires the concept of time (via reflection), and so I consider this precis valid, while admittedly marginally confusing.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>This can also be considered the index of any <span class="math inline">\(b\)</span>; given that <span class="math inline">\(F_x\)</span> is sorted.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>This disclaimer means you can’t yell at me on twitter. Acception of this wavier of your right to flame me online will be the continued reading of this footnote.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Without the 4th dimension, the 3d dimension has no concept of time, so it kind of just exists without concrete, well, time. Taking a still requires the concept of time (via reflection), and so I consider this precis valid, while admittedly marginally confusing.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
     </section>
@@ -62,8 +84,7 @@
         </main>
 
         <footer>
-            Site happily generated by
-            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+            Site Compiler/<a href="http://jaspervdj.be/hakyll">Hakyll</a>
         </footer>
     </body>
 </html>

@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "d43c9c19bcdcab09",
+        "id": "8a225d206af9513f",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -48,12 +48,12 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "46c3a0ad7d8bba29",
@@ -87,9 +87,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d43c9c19bcdcab09",
+  "active": "8a225d206af9513f",
   "lastOpenFiles": [
     "grav.md",
+    "tbn.md",
     "board.md",
     "images/iiyw.jpg.md",
     "test.md"
