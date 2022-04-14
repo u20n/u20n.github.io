@@ -25,28 +25,27 @@ main = hakyllWith config $ do
         route   idRoute
         compile compressCssCompiler
   
-    -- tags
-    {-#
+    -- tags    
     tags <- buildTags "items/*" (fromCapture "tags/*.html")
     tagsRules tags $ \tag pattern -> do
-      let title = "tagged w/\"" ++ tag ++ "\""
-      route idRoute
-      compile $ do
-        posts <- recentFirst =<< loadAll pattern
-        let ctx = constField "title" title
-                  `mappend` listField "posts" (iCtxTags tags) (return posts)
-                  `mappend` defaultContext
+        let title = "items tagged |" ++ tag ++ "|"
+        route idRoute
+        compile $ do
+            items <- recentFirst =<< loadAll pattern
+            let ctx = constField "title" title
+                      `mappend` listField "items" (iCtxTags tags) (return items)
+                      `mappend` defaultContext
 
-        makeItem ""
-          >>= loadAndApplyTemplate "templates/tag.html" ctx
-          >>= loadAndApplyTemplate "templates/default.html" ctx
-          >>= relativizeUrls
-    #-}
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/tag.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
     match "items/*" $ do
         route $ setExtension "html"
         compile $ pandocMathCompiler
-            >>= loadAndApplyTemplate "templates/item.html"    iCtx
-            >>= loadAndApplyTemplate "templates/default.html" iCtx
+            >>= loadAndApplyTemplate "templates/item.html"    (iCtxTags tags)
+            >>= loadAndApplyTemplate "templates/default.html" (iCtxTags tags)
             >>= relativizeUrls
 
     match "index.html" $ do
@@ -70,10 +69,8 @@ iCtx =
     dateField "date" "%m.%d.%0Y" `mappend`
     defaultContext
 
-{-#
 iCtxTags :: Tags -> Context String
 iCtxTags tags = tagsField "tags" tags `mappend` iCtx
-#-}
 
 --------------------------------------------------------------------------------
 
