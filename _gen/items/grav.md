@@ -30,6 +30,7 @@ All bodies of some mass have impact on the movements of the others. While discou
 This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_X \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x: F_x \space \neg \exists!$[^notation], a \*shudder\* stable relational system[^eventually][^sowhat].
 
 *How then, to account for this slip? I have no idea.*
+
 > (What about pushing it down one layer?)
 
 Create a set $N_x$ (not set for x), and take the greatest of that set, and then push it up to $F_x$.
@@ -37,6 +38,7 @@ $$e : N_x \implies e : \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\
 $$ e \to F_x $$
 
 This, predictably, just pushes the slip in accuracy one level down; there's now a slip of threshold in each calculation and no real improvement of the situation. 
+
 > (But if you can't see the problem than it's fixed, right?)
 
 This just means that for enough $e$, $N_x \subseteq F_x$.
