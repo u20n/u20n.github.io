@@ -55,7 +55,6 @@ main = hakyllWith config $ do
             let indexCtx =
                     listField "items" iCtx (return items) `mappend`
                     defaultContext
-
             getResourceBody
                 >>= applyAsTemplate indexCtx
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
@@ -72,6 +71,9 @@ iCtx =
 iCtxTags :: Tags -> Context String
 iCtxTags tags = tagsField "tags" tags `mappend` iCtx
 
+-- tag index
+-- I think just pushing the entire directory listing of "tags" is fine honestly
+-- I know how to do that in C/Cpp but i have no idea how to do that in haskell.
 --------------------------------------------------------------------------------
 
 pandocMathCompiler =

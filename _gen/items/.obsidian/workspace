@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "45362d96266695b3",
+        "id": "2a143b31061bff8a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "grav.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -87,7 +87,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "45362d96266695b3",
+  "active": "2a143b31061bff8a",
   "lastOpenFiles": [
     "grav.md",
     "tbn.md",
