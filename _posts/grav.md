@@ -4,7 +4,7 @@ abrv-title: uni.sim
 published: 2022-04-14
 tags: math, physics, astro
 status: incomplete
-usemathjax: true
+latex: true
 ---
 
 ### Section List
