@@ -6,7 +6,7 @@ tags: math, physics, astro
 status: incomplete
 ---
 
-###### Section List
+### Section List
 - overview & necessary disclaimer
 - degredation of accuracy and acceptable degrees
 	- interactions of the 3D
@@ -16,10 +16,10 @@ status: incomplete
 	- time as a meter
 	- 4d in its interactions with the aforementioned 3d system
 
-##### Overview
+### Overview
 In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approximate universe, obviously a very large endeavor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually *accurately* simulating the entire universe is a foolish task. This is mainly presented as a thought exercise.
 
-##### Degradation of Accuracy and Acceptable Degrees
+### Degradation of Accuracy and Acceptable Degrees
 **... in a simulated system**
 
 All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; ex. $$F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}$$
@@ -41,7 +41,7 @@ This, predictably, just pushes the slip in accuracy one level down; there's now 
 
 > (But if you can't see the problem than it's fixed, right?)
 
-This just means that for enough $e$, $N_x \subseteq F_x$.
+This just means that for enough $e$, $N_x \subseteq F_x$[^slip].
 
 ---- 
 

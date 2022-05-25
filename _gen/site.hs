@@ -76,6 +76,10 @@ iCtxTags tags = tagsField "tags" tags `mappend` iCtx
 -- I know how to do that in C/Cpp but i have no idea how to do that in haskell.
 --------------------------------------------------------------------------------
 
+------ Header Parsing ------
+
+------ Sidenotes ------
+
 pandocMathCompiler =
     let mathExtensions    = extensionsFromList [Ext_tex_math_dollars, Ext_tex_math_double_backslash, Ext_latex_macros]
         defaultExtensions = writerExtensions defaultHakyllWriterOptions
