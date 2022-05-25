@@ -33,7 +33,9 @@ github_username: u20n
 theme: minima
 plugins:
   - jekyll-feed
-
+title: notes/u2on
+description: helpful(ish) notes
+author: u2on
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

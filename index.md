@@ -4,3 +4,11 @@
 
 layout: home
 ---
+
+
+#### Yo
+
+$$
+  x \eq y
+  x \approx a
+$$

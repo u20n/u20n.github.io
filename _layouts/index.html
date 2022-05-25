@@ -1,0 +1,32 @@
+---
+layout: layout
+title: index
+---
+
+<img src="/assets/images/burnitall.png" style="width: 90%; height: 90%; float: middle; margin: 10px;" />
+
+<p>You're in my notes</p>
+
+<p>Until some semblance of order is established, here's ...</p>
+
+<p>.. a list of items in accessed order: </p>
+
+<hr>
+<div class="post index">
+{% for post in site.posts %}
+  <li>
+    <span> {{ post.date | "%B %e %Y }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</div>
+<p> ... and here's a tag index: </p>
+<hr>
+<div class="post index">
+{% for tag in site.tags %}
+  <li>
+    <span>{{ tag.name }}</span>
+    <!-- find all posts w/ tag -->
+      <a href={{ post.url }}>{{ post.title }}</a>
+  </li>
+{% endfor %}
+</div>
