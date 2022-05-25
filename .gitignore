@@ -1,2 +1,2 @@
-_gen/_cache/*
-_gen/.stack-work/*
+*/_cache/*
+*/.stack-work/*
