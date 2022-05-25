@@ -28,7 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: rebuild
         run: |
-          cd _gen; stack build,
+          cd _gen; stack build
           echo Rebuild Binary
-          stack exec site rebuild,
-          echo Recompiled Static Files.
+          stack exec site rebuild
+          echo Recompiled Static Files
