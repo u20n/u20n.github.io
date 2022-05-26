@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>notes/uni.sim</title>
+        <link rel="stylesheet" href="../css/default.css" />
+        <!-- latex -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../items/board.html">!op</a>
+            </div>
+            <nav>
+                <a href="../index.html">../</a>
+                <a href="../index.html">~/</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>headaches w/ gravity</h1>
+            <article>
+    <section class="header">
+        
+          pub: 04.14.2022
+        
+    </section>
+    <section class="info">
+      
+        <a href="../tags/math.html">math</a>, <a href="../tags/physics.html">physics</a>, <a href="../tags/astro.html">astro</a>
+      
+      
+        | [incomplete]
+      
+    </section>
+    <section>
+        <h3 id="section-list">Section List</h3>
+<ul>
+<li>overview &amp; necessary disclaimer</li>
+<li>degredation of accuracy and acceptable degrees
+<ul>
+<li>interactions of the 3D</li>
+<li>physical interactions between bodies</li>
+<li>acceptable degrees of error</li>
+</ul></li>
+<li>time as an influence
+<ul>
+<li>time as a meter</li>
+<li>4d in its interactions with the aforementioned 3d system</li>
+</ul></li>
+</ul>
+<h3 id="overview">Overview</h3>
+<p>In the pursuit of a <span class="math inline">\(\underline{\text{workable}}\)</span> platform to simulate an approximate universe, obviously a very large endeavor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually <em>accurately</em> simulating the entire universe is a foolish task. This is mainly presented as a thought exercise.</p>
+<h3 id="degradation-of-accuracy-and-acceptable-degrees">Degradation of Accuracy and Acceptable Degrees</h3>
+<p><strong>… in a simulated system</strong></p>
+<p>All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; ex. <span class="math display">\[F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}\]</span></p>
+<blockquote>
+<p>Where <span class="math inline">\(x\)</span> is measure of influence<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, <span class="math inline">\(t\)</span> is some threshold, <span class="math inline">\(z\)</span> is relative gravitational force of <span class="math inline">\(b\)</span> taken at constant distance, and <span class="math inline">\(F_x\)</span> is a set of all influential <span class="math inline">\(b\)</span>, <span class="math inline">\(\forall\)</span> bodies <span class="math inline">\(b\)</span>. <em>Note</em> While I take the influence as a floored number (assumed to <span class="math inline">\(10^0\)</span>), any variation (the one I primarily consider is <span class="math inline">\(\lfloor ... \rceil\)</span>) suffices; as long as it is constant across <span class="math inline">\(x\)</span>.</p>
+</blockquote>
+<p>This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of <span class="math inline">\(x\)</span> for <span class="math inline">\(F_X \prec b\)</span> and <span class="math inline">\(b_x\)</span>; it may create a plateau of <span class="math inline">\(F_x\)</span>, and given <span class="math inline">\(\forall \space x: F_x \space \neg \exists!\)</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, a *shudder* stable relational system<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p><em>How then, to account for this slip? I have no idea.</em></p>
+<blockquote>
+<p>(What about pushing it down one layer?)</p>
+</blockquote>
+<p>Create a set <span class="math inline">\(N_x\)</span> (not set for x), and take the greatest of that set, and then push it up to <span class="math inline">\(F_x\)</span>. <span class="math display">\[e : N_x \implies e : \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\{N_x\} \end{cases}\]</span> <span class="math display">\[ e \to F_x \]</span></p>
+<p>This, predictably, just pushes the slip in accuracy one level down; there’s now a slip of threshold in each calculation<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> and no real improvement of the situation.</p>
+<blockquote>
+<p>(But if you can’t see the problem than it’s fixed, right?)</p>
+</blockquote>
+<p>This just means that for enough <span class="math inline">\(e\)</span>, <span class="math inline">\(N_x \subseteq F_x\)</span><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+<hr />
+<p>It may make sense to impose some sense of <em>inherited</em> order on the actual count of bodies in the <span class="math inline">\(F_x\)</span> set, but that would, like the set of <span class="math inline">\(N_x\)</span>, only push the slip further down, rather than solve it. Almost all solutions have this slip, and hence we must account for the degradation of accuracy, and the acceptable degrees of error.</p>
+<p>One solution I’m considering is the creation of zones of attraction between sets of <span class="math inline">\(F_x\)</span>. Creating a sorted 3 dimensional vector of all sets of <span class="math inline">\(F_x\)</span> could enable the pseudo sorting of these zone of attraction without actually attaching any explicit tag to each set.</p>
+<blockquote>
+<p>But wait, that’s just what everyone else does.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+</blockquote>
+<p>Ensuring sane degrees of accuracy necessitates consideration of appropriate scope; if at great enough distance that <span class="math inline">\(F_x\)</span> begins to exclude bodies and thus create <span class="math inline">\(N_x\)</span>, the entire gravitation force of <span class="math inline">\(F_x\)</span> becomes monolithic (when considered against other bodies (including other <span class="math inline">\(F_x\)</span>)). One way to retain the ‘naturality’ of the generation of <span class="math inline">\(F_x\)</span> would be the connection of <span class="math inline">\(t\)</span> to something related to the count of objects in <span class="math inline">\(F_x\)</span> or maybe the index in the 3 dimensional vector. (I’m still not sure)</p>
+<hr />
+<p>This is the problem with binary generation of ‘valid’ bodies; the necessary exclusion of other bodies creates either a slip in the criteria (see above), or a series of monolithic gravitational zones that operate mainly as closed systems. Unfortunately, from my very small amount of research on the subject, it seems the latter is the more realistic scenario.</p>
+<p>This does mean most of the fun is sucked out of the exercise, but at least the micro of how exactly to interact smaller bodies (or particles, if we’re literally micro) within these monolithic zones of influence. Oh, and we can spice things up with time.</p>
+<h5 id="time-as-an-influence">Time as an Influence</h5>
+<p><strong>…(and Willing Participant)</strong></p>
+<p>Given that Einsteinian physics is a cooler system<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>, time is going to be considered with this simulation. To help myself visualize the 4th dimension, and to succinctly explain my rationale, a <em>simple</em> metaphor will be used<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. Imagine, if you will, the 4th dimension as a photo camera. A still frame is taken of the 3rd dimension<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>; these images, overlaid in order, become a body’s experience of the 4th dimension. Time, in this system, exists as the frame-rate of the camera; the closer to light speed a body is, the slower its relative time. In our metaphor, this would be represented as the gaps between each frame.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>This can also be considered the index of any <span class="math inline">\(b\)</span>; given that <span class="math inline">\(F_x\)</span> is sorted.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>This notation is pretty spooky; essentially that there exists <span class="math inline">\(\gt1\)</span> of <span class="math inline">\(x\)</span> for all <span class="math inline">\(x : F_x\)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>This is a little misleading; if the relational force is the same across the entire system, nothing will ever move out of the <em>perfect</em> sequence in any substantial way without external force.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>This is bad because it’s boring.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>Given that the threshold is being set and then ignored for one body each iteration, as the set of <span class="math inline">\(N_x\)</span> decreases, so does the legitimacy of the threshold. For enough bodies that have been excluded, the entirety of <span class="math inline">\(N_x\)</span> will either be empty or a subset of <span class="math inline">\(F_x\)</span>. This could be solved by setting a hard limit on how many former <span class="math inline">\(N_x\)</span> bodies can populate <span class="math inline">\(F_x\)</span>, but then you may as well just lower the threshold enough to consider those bodies in <span class="math inline">\(F_x\)</span> originally.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>Given that the threshold is being set and then ignored for one body each iteration, as the set of <span class="math inline">\(N_x\)</span> decreases, so does the legitimacy of the threshold. For enough bodies that have been excluded, the entirety of <span class="math inline">\(N_x\)</span> will either be empty or a subset of <span class="math inline">\(F_x\)</span>. This could be solved by setting a hard limit on how many former <span class="math inline">\(N_x\)</span> bodies can populate <span class="math inline">\(F_x\)</span>, but then you may as well just lower the threshold enough to consider those bodies in <span class="math inline">\(F_x\)</span> originally.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p><em>I don’t know that, but I assume that it’s the conclusion that others have also come to.</em><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>(Source: Trust me bro)<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>This disclaimer means you can’t yell at me on twitter. Acceptance of this wavier of your right to flame me online will be the continued reading of this footnote.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>Without the 4th dimension, the 3d dimension has no concept of time, so it kind of just exists without concrete, well, time. Taking a still requires the concept of time (via reflection), and so I consider this precis valid, while admittedly marginally confusing.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+            Site Compiler/<a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>
