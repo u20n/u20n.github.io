@@ -15,8 +15,6 @@ config = defaultConfiguration {
   destinationDirectory = "../docs/notes/"
 }
 
--- there's got to be a better way to do this but I can't be bothered to find it
-
 main::IO()
 main = hakyllWith config $ do
     match ("images/*") $ do
