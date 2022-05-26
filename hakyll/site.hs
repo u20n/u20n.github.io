@@ -12,7 +12,7 @@ import Hakyll
 -- RSS & Atom
 feedConfig::FeedConfiguration
 feedConfig = FeedConfiguration { 
-  feedTitle       = "notes<u2on", 
+  feedTitle       = "notes.u2on", 
   feedDescription = "various notes and writings on various topics to various degrees of completeness and accuracy",
   feedAuthorName  = "u2on",
   feedAuthorEmail = "me@notu.dev",

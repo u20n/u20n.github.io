@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>notes<u2on</title>
+    <title>notes.u2on</title>
     <link href="https://notu.dev/notes/atom.xml" rel="self" />
     <link href="https://notu.dev/notes" />
     <id>https://notu.dev/notes/atom.xml</id>
