@@ -1,32 +1,70 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>notes/uni.sim</title>
-        <link rel="stylesheet" href="../css/default.css" />
-        <!-- latex -->
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <!-- font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="../items/board.html">!op</a>
-            </div>
-            <nav>
-                <a href="../index.html">../</a>
-                <a href="../index.html">~/</a>
-            </nav>
-        </header>
-
-        <main role="main">
-            <h1>headaches w/ gravity</h1>
-            <article>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>notes<u2on</title>
+    <link href="https://notu.dev/notes/rss.xml" rel="self" />
+    <link href="https://notu.dev/notes" />
+    <id>https://notu.dev/notes/rss.xml</id>
+    <author>
+        <name>u2on</name>
+        <email>me@notu.dev</email>
+    </author>
+    <updated>2022-04-26T00:00:00Z</updated>
+    <entry>
+    <title>ensuring fair trade in user generated content</title>
+    <link href="https://notu.dev/notes/posts/fairtrade.html" />
+    <id>https://notu.dev/notes/posts/fairtrade.html</id>
+    <published>2022-04-26</published>
+    <updated>2022-04-26T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        
+          pub: 04.26.2022
+        
+    </section>
+    <section class="info">
+      
+        <a href="/tags/math.html">math</a>, <a href="/tags/game%20theory.html">game theory</a>
+      
+      
+        | [incomplete]
+      
+    </section>
+    <section>
+        <h3 id="preamble">Preamble</h3>
+<p>I propose a system of governance for user-created content in online games; mimicking zero trust design schemes to: maintain appropriate sustainability, and avoid hyperinflation of in-game markets or currency. This proposal largely focuses on MMOs as a base, given the massive need for new engaging content, the existence of player-to-player economy, and a large player base.</p>
+<h3 id="burden-of-cost">Burden of Cost</h3>
+<p>The eventual degradation of a “good”<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> online game is seldom the lack of active players. It is, instead, the burden of cost on the publisher; maintenance of servers, new content, and other costs of doing business. Ideally, these games should be open sourced at the end of this lifecycle, left in a state similar to gmod<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Some success stories include OpenTTD<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, where the player base becomes the developer of the game, releasing (economic) burden from the publisher and/or game studio.</p>
+<p>While the eventual release of game IP into the commons is a controversial opinion to say the least, at lease these issues can be solved by the introduction of fair trade systems into community content. In this context, fair trade is not the arrangement designed to directly connect farmers to consumers, but is instead a system designed to have accurate and appropriate risk<span class="math inline">\(:\)</span>reward ratio.</p>
+<h3 id="small-steps">Small Steps</h3>
+<p>Let’s start with a small game concept.</p>
+<p>Our super cool new mobile MMO 4x game is called <em>Super Interdimensional Galactic Defense Force</em>. Players control an initially small colony, that generates capital and money by exploring surrounding terrain and collecting resources. The planet on which our game takes place is also inhabited by a dangerous race of apex predators. They’ve inflicted heavy losses on all of our foraging parties, and so any research on their weaknesses would greatly aid in our development of effective personal protection units.</p>
+<p>Without doing too much subrate world building, let’s assume that there is a nonzero count of corporations who pay handsomely for body parts from these aliens; to gain an advantage in their research.</p>
+<blockquote>
+<p>We’ve introduced a ambiguous but valid threat, a justification for compensation, and almost limitless creative liberty. Besides lore considerations, the limiting factor is now the actual content.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+</blockquote>
+<p>We assume a game environment is composed of a set of dimensionally equal tiles, which each have the ability to contain <span class="math inline">\(\le{1}\)</span> copies of a unique asset<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. We also assume all possible assets are known, and for the sake of sanity, assign them to set <span class="math inline">\(A\)</span>.</p>
+<h3 id="game-loop-nuance">Game Loop Nuance</h3>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>A game that does not suffer from long term player loss due to lack of content.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p><a href="https://en.wikipedia.org/wiki/Garry%27s_Mod">Garry’s Mod</a> has extensive documentation for both modding and server maintenance, requiring almost complete hands-off support from Valve.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p><a href="https://en.wikipedia.org/wiki/OpenTTD">Open Transport Tycoon Deluxe</a> is a open source fan remake of the popular TransportTycoonDeluxe, and is incredibly successful and well reviewed on steam.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Although, this scenario has enough ambiguity that any lore-breaking additions can be shuffled (admittedly lazily) into any one of the gimmicky “this doesn’t count but counts” modifiers; interdimensional leak, time jumping, genetic mutation with a shady catalyst, etc.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>This allows us to have partial portions of assets, allowing for say a 4 tile large building.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>headaches w/ gravity</title>
+    <link href="https://notu.dev/notes/posts/grav.html" />
+    <id>https://notu.dev/notes/posts/grav.html</id>
+    <published>2022-04-14</published>
+    <updated>2022-04-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
     <section class="header">
         
           pub: 04.14.2022
@@ -34,7 +72,7 @@
     </section>
     <section class="info">
       
-        <a href="../tags/math.html">math</a>, <a href="../tags/physics.html">physics</a>, <a href="../tags/astro.html">astro</a>
+        <a href="/tags/math.html">math</a>, <a href="/tags/physics.html">physics</a>, <a href="/tags/astro.html">astro</a>
       
       
         | [incomplete]
@@ -105,13 +143,62 @@
 </section>
     </section>
 </article>
+]]></summary>
+</entry>
+<entry>
+    <title>creating a tiny big number library</title>
+    <link href="https://notu.dev/notes/posts/tbn.html" />
+    <id>https://notu.dev/notes/posts/tbn.html</id>
+    <published>2022-03-24</published>
+    <updated>2022-03-24T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        
+          pub: 03.24.2022
+        
+    </section>
+    <section class="info">
+      
+        <a href="/tags/math.html">math</a>
+      
+      
+        | [incomplete]
+      
+    </section>
+    <section>
+        <h4 id="tiny-big-number-lib---background">Tiny Big Number Lib - Background</h4>
+<p>Tiny Big Number Lib was written so that I could do physics projects and other large simulations in C++ without a huge amount of dependency overhead. It aims to implement the <span class="math inline">\(\underline{\text{bare minimum}}\)</span> necessary to do these calculations.</p>
+<h3 id="implementation-notes-design-decisions">Implementation Notes + Design Decisions</h3>
+<h5 id="big-vs-signed_big">big vs signed_big</h5>
+<p>While the initial methods were able to just used an aliased vector of unsigned integers; <code>using big = std::vector&lt;unsigned int&gt;;</code>, as soon as subtraction was being added, it made sense to implement some form of signing. As I’m doing my best to keep the library as ‘vanillia’ as possible, this was achieved by aliasing a tuple of a bool and a big to <code>signed_big</code>. A simple translation namespace was created; <code>unpack</code> for QoL.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
+    <title>op/status</title>
+    <link href="https://notu.dev/notes/posts/board.html" />
+    <id>https://notu.dev/notes/posts/board.html</id>
+    <published>2000-01-01T00:00:00Z</published>
+    <updated>2000-01-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        
+          pub: 01.01.2000
+        
+    </section>
+    <section class="info">
+      
+        
+      
+      
+    </section>
+    <section>
+        <h1 id="updates">Updates</h1>
+<p>Site is currently being built, sorry for any mess.</p>
+    </section>
+</article>
+]]></summary>
+</entry>
 
-        </main>
-
-        <footer>
-          <a href="https://notu.dev/notes/rss.xml">RSS</a>
-          <a href="https://notu.dev/notes/atom.xml">Atom</a>
-          Site Compiler/<a href="http://jaspervdj.be/hakyll">Hakyll</a>
-        </footer>
-    </body>
-</html>
+</feed>
