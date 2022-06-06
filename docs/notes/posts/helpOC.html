@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>notes/short.oc</title>
+        <link rel="stylesheet" href="../css/default.css" />
+        <!-- latex -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../items/board.html">!op</a>
+            </div>
+            <nav>
+                <a href="../index.html">../</a>
+                <a href="../index.html">~/</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>helpful concord blobs</h1>
+            <article>
+    <section class="header">
+        
+          pub: 05.28.2022
+        
+    </section>
+    <section class="info">
+      
+        <a href="../tags/code.html">code</a>
+      
+      
+        | [incomplete]
+      
+    </section>
+    <section>
+        <p>This note contains some helpful scripts I’ve ended using over and over while creating things derived of the OC libraries. You may find them immediately useful, and if not, I hope you can take away the broader concepts present.</p>
+<h4 id="copying-and-including-oc-libraries">Copying and Including OC Libraries</h4>
+<p>Simple Makefile for moving existing git clones of Concord libraries to the necessary <code>lib/</code> folder. This isn’t necessary for standard global <code>/usr/</code> installs, but is for nightly build testing or for strictly local installs.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode makefile"><code class="sourceCode makefile"><span id="cb1-1"><a href="#cb1-1"></a><span class="dt">LK </span><span class="ch">=</span><span class="st"> -lcryptopp -lpthread -L./lib/core/</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="dt">CR </span><span class="ch">=</span><span class="st"> -I./lib/core/inc</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="dt">UT </span><span class="ch">=</span><span class="st"> -I./lib/uttu/inc</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co"># Change to appropriate dir or pass as input through shell script</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="dt">LC </span><span class="ch">=</span><span class="st"> ~/code/concord/core/src/</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="dt">LU </span><span class="ch">=</span><span class="st"> ~/code/concord/uttu/</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a>...</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># go into local version of core &amp; uttu, build, and then cp to ./lib/</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="co"># -- core needs uttu</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="dv">reset:</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>	cd <span class="ch">$(</span><span class="dt">LU</span><span class="ch">)</span> &amp;&amp; <span class="ch">$(</span><span class="dt">MAKE</span><span class="ch">)</span> clean &amp;&amp; <span class="ch">$(</span><span class="dt">MAKE</span><span class="ch">)</span> linux_obj</span>
+<span id="cb1-15"><a href="#cb1-15"></a>	cp -r <span class="ch">$(</span><span class="dt">LU</span><span class="ch">)</span>build/exe/. ./lib/uttu/</span>
+<span id="cb1-16"><a href="#cb1-16"></a>	cp -r lib/uttu <span class="ch">$(</span><span class="dt">LC</span><span class="ch">)</span>../lib/</span>
+<span id="cb1-17"><a href="#cb1-17"></a>	cd <span class="ch">$(</span><span class="dt">LC</span><span class="ch">)</span> &amp;&amp; <span class="ch">$(</span><span class="dt">MAKE</span><span class="ch">)</span> clean &amp;&amp; <span class="ch">$(</span><span class="dt">MAKE</span><span class="ch">)</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>	cp -r <span class="ch">$(</span><span class="dt">LC</span><span class="ch">)</span>../exe/. ./lib/core</span></code></pre></div>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <a href="https://notu.dev/notes/rss.xml">RSS</a>
+          <a href="https://notu.dev/notes/atom.xml">Atom</a>
+          Site Compiler/<a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>

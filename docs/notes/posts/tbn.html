@@ -45,7 +45,7 @@
 <p>Tiny Big Number Lib was written so that I could do physics projects and other large simulations in C++ without a huge amount of dependency overhead. It aims to implement the <span class="math inline">\(\underline{\text{bare minimum}}\)</span> necessary to do these calculations.</p>
 <h3 id="implementation-notes-design-decisions">Implementation Notes + Design Decisions</h3>
 <h5 id="big-vs-signed_big">big vs signed_big</h5>
-<p>While the initial methods were able to just used an aliased vector of unsigned integers; <code>using big = std::vector&lt;unsigned int&gt;;</code>, as soon as subtraction was being added, it made sense to implement some form of signing. As I’m doing my best to keep the library as ‘vanillia’ as possible, this was achieved by aliasing a tuple of a bool and a big to <code>signed_big</code>. A simple translation namespace was created; <code>unpack</code> for QoL.</p>
+<p>While the initial methods were able to just used an aliased vector of unsigned integers; <code>using big = std::vector&lt;unsigned int&gt;;</code>, as soon as subtraction was being added, it made sense to implement some form of signing. As I’m doing my best to keep the library as ‘vanillia’ as possible, this was achieved by aliasing a tuple of a bool and a big to <code>signed_big</code>. A simple translation namespace was created; <code>unpack</code> for QoL. It may make sense later to form a standardised <code>struct</code> model, but for now this will suffice.</p>
     </section>
 </article>
 
