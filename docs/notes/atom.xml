@@ -8,8 +8,45 @@
         <name>u2on</name>
         <email>me@notu.dev</email>
     </author>
-    <updated>2022-06-16T00:00:00Z</updated>
+    <updated>2022-09-02T00:00:00Z</updated>
     <entry>
+    <title>achieving vanilla suckless scroll functionality</title>
+    <link href="https://notu.dev/notes/posts/vsf.html" />
+    <id>https://notu.dev/notes/posts/vsf.html</id>
+    <published>2022-09-02</published>
+    <updated>2022-09-02T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<article>
+    <section class="header">
+        
+          pub: 09.02.2022
+        
+    </section>
+    <section class="info">
+      
+        <a href="/tags/config.html">config</a>
+      
+      
+        | [complete]
+      
+    </section>
+    <section>
+        <h3 id="achieving-vanilla-suckless-scroll-functionality">achieving vanilla suckless scroll functionality</h3>
+<p>For the last ~2 years, as I’ve been migrating my workflow to align with the ‘less is more’ mantra. One issue I’ve encountered is inherent to this methodology; less, is well, less. Stripping unnecessary features that apply to &lt;70% of the userbase, and making people install what they want to use, instead of being forced to have bloat that they’ll never use, is the ‘correct’ solution. But common agreement on how to re-implement this functionality is paramount to the installation<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> of these tools.</p>
+<p>The only time that I <strong>need</strong> scrolling in my terminal emulator is when inspecting make/gcc build output. Every other tool has scroll functionality encompassed within; vim, gdb, man, etc. Patching this into ST is unnecessary<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>; given that I don’t need this functionality for any other tool. A simple solution is to alias vmake (verbose make) to a less command pipe; <code>alias vmake='less &lt; &lt;(make 2&gt;&amp;1)'</code><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>We can expand this functionality with UNIX style piping; simply alias <code>'less&lt; &lt;(xargs -0 2&gt;&amp;1)'</code> as appropriate. Example usage; (aliased as <code>view</code>) <code>cat very_large_file.txt | view</code>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>I view Suckless tools as a minimalist interpretation of the original UNIX philosophy, as an effect of this, once you set them up, you’ll never be forced to modify it due to breakage.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>While Suckless’ scroll is a valiant effort, it’s run into some <a href="https://tools.suckless.org/scroll/">non-negotiable problems</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Found the pipe functionality after doing a deep forum dive; <a href="https://www.linuxquestions.org/questions/programming-9/how-to-pipe-output-from-make-325285/">original source</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+    </section>
+</article>
+]]></summary>
+</entry>
+<entry>
     <title>Influence and Magic</title>
     <link href="https://notu.dev/notes/posts/infmag.html" />
     <id>https://notu.dev/notes/posts/infmag.html</id>
