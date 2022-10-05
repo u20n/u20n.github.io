@@ -31,6 +31,7 @@ All bodies of some mass have impact on the movements of the others. While discou
 This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_x \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a stable relational system[^eventually]. This is bad because it's boring.
 
 ----
+
 We can attempt to create a buffer set between all bodies $b$ and what we'd consider influential bodies $F_x(b)$.
 
 Create a set $N_x$ (null $x$), and take the greatest of that set, and then push it up to $F_x$.

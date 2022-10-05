@@ -68,22 +68,11 @@
 <p><em>While I take the influence as a floored number (assumed at <span class="math inline">\(10^0\)</span>), any variation (the one I primarily consider is <span class="math inline">\(\lfloor ... \rceil\)</span>) suffices; as long as it is constant across <span class="math inline">\(x\)</span>.</em></p>
 </blockquote>
 <p>This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of <span class="math inline">\(x\)</span> for <span class="math inline">\(F_x \prec b\)</span> and <span class="math inline">\(b_x\)</span>; it may create a plateau of <span class="math inline">\(F_x\)</span>, and given <span class="math inline">\(\forall \space x \mid x \space \notin F_x\)</span>, a stable relational system<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. This is bad because it’s boring.</p>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 6%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>We can attempt to create a buffer set between all bodies <span class="math inline">\(b\)</span> and what we’d consider influential bodies <span class="math inline">\(F_x(b)\)</span>.</td>
-</tr>
-<tr class="even">
-<td>Create a set <span class="math inline">\(N_x\)</span> (null <span class="math inline">\(x\)</span>), and take the greatest of that set, and then push it up to <span class="math inline">\(F_x\)</span>. <span class="math display">\[e : N_x \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\{N_x\} \end{cases}\]</span> <span class="math display">\[ N_x = (N_x - e)\]</span> <span class="math display">\[ e \to F_x \]</span></td>
-</tr>
-<tr class="odd">
-<td>This just pushes the slip in accuracy one level down; there’s now a slip of threshold in each calculation: given that the threshold is being set and then ignored for one body each iteration, as <span class="math inline">\(|N_x|\)</span> decreases, so does the legitimacy of the threshold - for enough bodies that have been excluded, <span class="math inline">\(N_x = \emptyset\)</span>. This could be solved by setting a hard limit on how many former <span class="math inline">\(N_x\)</span> bodies can populate <span class="math inline">\(F_x\)</span>, but then you may as well just lower the threshold enough to consider those bodies in <span class="math inline">\(F_x\)</span> originally.</td>
-</tr>
-</tbody>
-</table>
+<hr />
+<p>We can attempt to create a buffer set between all bodies <span class="math inline">\(b\)</span> and what we’d consider influential bodies <span class="math inline">\(F_x(b)\)</span>.</p>
+<p>Create a set <span class="math inline">\(N_x\)</span> (null <span class="math inline">\(x\)</span>), and take the greatest of that set, and then push it up to <span class="math inline">\(F_x\)</span>. <span class="math display">\[e : N_x \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\{N_x\} \end{cases}\]</span> <span class="math display">\[ N_x = (N_x - e)\]</span> <span class="math display">\[ e \to F_x \]</span></p>
+<p>This just pushes the slip in accuracy one level down; there’s now a slip of threshold in each calculation: given that the threshold is being set and then ignored for one body each iteration, as <span class="math inline">\(|N_x|\)</span> decreases, so does the legitimacy of the threshold - for enough bodies that have been excluded, <span class="math inline">\(N_x = \emptyset\)</span>. This could be solved by setting a hard limit on how many former <span class="math inline">\(N_x\)</span> bodies can populate <span class="math inline">\(F_x\)</span>, but then you may as well just lower the threshold enough to consider those bodies in <span class="math inline">\(F_x\)</span> originally.</p>
+<hr />
 <p>It may make sense to impose some sense of <em>inherited</em> order on the actual count of bodies in the <span class="math inline">\(F_x\)</span> set, but that would, like the set of <span class="math inline">\(N_x\)</span>, only push the slip further down, rather than solve it. Almost all solutions have this slip, and hence we must account for the degradation of accuracy, and the acceptable degrees of error.</p>
 <p>One solution I’m considering is the creation of zones of attraction between sets of <span class="math inline">\(F_x\)</span>. Creating a sorted 3 dimensional vector of all sets of <span class="math inline">\(F_x\)</span> could enable the pseudo sorting of these zone of attraction without actually attaching any explicit tag to each set.</p>
 <blockquote>
