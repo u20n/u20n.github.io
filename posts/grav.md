@@ -22,18 +22,18 @@ In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approx
 ### Degradation of Accuracy and Acceptable Degrees
 **... in a simulated system**
 
-All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; ex. $$F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}$$
+All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; e.g. $$F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}$$
 
-> Where $x$ is measure of influence[^smol], $t$ is some threshold, $z$ is relative gravitational force of $b$ taken at constant distance, and $F_x$ is a set of all influential $b$, $\forall$ bodies $b$.
-> *Note* While I take the influence as a floored number (assumed at $10^0$), any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$.
+> Where $x$ is measure of influence[^smol], $t$ is some threshold, $z$ is relative gravitational force (in this context of $b$) taken at constant distance, and $F_x$ is a set of all influential $b$, $\forall$ bodies $b$ of $B$. It is implied that $F_x \subset B$.
+> 
+> *While I take the influence as a floored number (assumed at $10^0$), any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$.*
 
-This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_X \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a \*shudder\* stable relational system[^eventually][^sowhat].
+This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_x \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a stable relational system[^eventually]. This is bad because it's boring.
 
-*How then, to account for this slip? I have no idea.*
+----
+We can attempt to create a buffer set between all bodies $b$ and what we'd consider influential bodies $F_x(b)$.
 
-> (What about pushing it down one layer?)
-
-Create a set $N_x$ (not set for x), and take the greatest of that set, and then push it up to $F_x$.
+Create a set $N_x$ (null $x$), and take the greatest of that set, and then push it up to $F_x$.
 $$e : N_x \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\{N_x\} \end{cases}$$ 
 $$ N_x = (N_x - e)$$
 $$ e \to F_x $$
@@ -66,6 +66,5 @@ Given that Einsteinian physics is a cooler system[^trustme], time is going to be
 [^smol]: This can also be considered the index of any $b$; given that $F_x$ is sorted.
 [^notation]: This notation is pretty spooky; essentially that there exists $\gt1$ of $x$ for all $x : F_x$.
 [^eventually]: This is a little misleading; if the relational force is the same across the entire system, nothing will ever move out of the *perfect* sequence in any substantial way without external force.
-[^sowhat]: This is bad because it's boring.
 [^flame]: This disclaimer means you can't yell at me on twitter. Acceptance of this wavier of your right to flame me online will be the continued reading of this footnote.
 [^still]: Without the 4th dimension, the 3d dimension has no concept of time, so it kind of just exists without concrete, well, time. Taking a still requires the concept of time (via reflection), and so I consider this precis valid, while admittedly marginally confusing.
