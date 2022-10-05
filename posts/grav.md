@@ -25,7 +25,7 @@ In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approx
 All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; e.g. $$F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}$$
 
 > Where $x$ is measure of influence[^smol], $t$ is some threshold, $z$ is relative gravitational force (in this context of $b$) taken at constant distance, and $F_x$ is a set of all influential $b$, $\forall$ bodies $b$ of $B$. It is implied that $F_x \subset B$.
-> 
+
 > *While I take the influence as a floored number (assumed at $10^0$), any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$.*
 
 This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_x \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a stable relational system[^eventually]. This is bad because it's boring.
