@@ -25,23 +25,20 @@ In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approx
 All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; ex. $$F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}$$
 
 > Where $x$ is measure of influence[^smol], $t$ is some threshold, $z$ is relative gravitational force of $b$ taken at constant distance, and $F_x$ is a set of all influential $b$, $\forall$ bodies $b$.
-> *Note* While I take the influence as a floored number (assumed to $10^0$), any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$.
+> *Note* While I take the influence as a floored number (assumed at $10^0$), any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$.
 
-This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_X \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x: F_x \space \neg \exists!$[^notation], a \*shudder\* stable relational system[^eventually][^sowhat].
+This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_X \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a \*shudder\* stable relational system[^eventually][^sowhat].
 
 *How then, to account for this slip? I have no idea.*
 
 > (What about pushing it down one layer?)
 
 Create a set $N_x$ (not set for x), and take the greatest of that set, and then push it up to $F_x$.
-$$e : N_x \implies e : \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\{N_x\} \end{cases}$$ 
+$$e : N_x \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\{N_x\} \end{cases}$$ 
+$$ N_x = (N_x - e)$$
 $$ e \to F_x $$
 
-This, predictably, just pushes the slip in accuracy one level down; there's now a slip of threshold in each calculation[^slip] and no real improvement of the situation. 
-
-> (But if you can't see the problem than it's fixed, right?)
-
-This just means that for enough $e$, $N_x \subseteq F_x$[^slip].
+This just pushes the slip in accuracy one level down; there's now a slip of threshold in each calculation: given that the threshold is being set and then ignored for one body each iteration, as $|N_x|$ decreases, so does the legitimacy of the threshold - for enough bodies that have been excluded, $N_x = \emptyset$. This could be solved by setting a hard limit on how many former $N_x$ bodies can populate $F_x$, but then you may as well just lower the threshold enough to consider those bodies in $F_x$ originally.
 
 ---- 
 
@@ -66,7 +63,6 @@ Given that Einsteinian physics is a cooler system[^trustme], time is going to be
 
 [^trustme]: (Source: Trust me bro)
 [^theysay]: *I don't know that, but I assume that it's the conclusion that others have also come to.*
-[^slip]: Given that the threshold is being set and then ignored for one body each iteration, as the set of $N_x$ decreases, so does the legitimacy of the threshold. For enough bodies that have been excluded, the entirety of $N_x$ will either be empty or a subset of $F_x$. This could be solved by setting a hard limit on how many former $N_x$ bodies can populate $F_x$, but then you may as well just lower the threshold enough to consider those bodies in $F_x$ originally.
 [^smol]: This can also be considered the index of any $b$; given that $F_x$ is sorted.
 [^notation]: This notation is pretty spooky; essentially that there exists $\gt1$ of $x$ for all $x : F_x$.
 [^eventually]: This is a little misleading; if the relational force is the same across the entire system, nothing will ever move out of the *perfect* sequence in any substantial way without external force.
