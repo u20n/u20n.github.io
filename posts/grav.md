@@ -28,14 +28,14 @@ All bodies of some mass have impact on the movements of the others. While discou
 
 > *While I take the influence as a floored number (assumed at $10^0$), any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$.*
 
-This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_x \prec b$ and $b_x$; it may create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a stable relational system[^eventually]. This is bad because it's boring.
+This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_x \prec b$ and $b_x$; it may (dependent on contents of $B$) create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a stable relational system[^eventually]. This is bad because it's boring.
 
 ----
 
 We can attempt to create a buffer set between all bodies $b$ and what we'd consider influential bodies $F_x(b)$.
 
 Create a set $N_x$ (null $x$), and take the greatest of that set, and then push it up to $F_x$.
-$$e : N_x \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\{N_x\} \end{cases}$$ 
+$$e : N_x \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\lgroup N_x\rgroup \end{cases}$$ 
 $$ N_x = (N_x - e)$$
 $$ e \to F_x $$
 
