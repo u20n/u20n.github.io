@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>notes/swn.crypt</title>
+        <link rel="stylesheet" href="../css/default.css" />
+        <!-- latex -->
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="../posts/board.html">!op</a>
+            </div>
+            <nav>
+                <a href="../index.html">../</a>
+                <a href="../index.html">~/</a>
+            </nav>
+        </header>
+
+        <main role="main">
+            <h1>say what now?</h1>
+            <article>
+    <section class="header">
+        
+        <center><b>u2on&lt;me@notu.dev&gt;, LS&lt;plinthist@proton.me&gt;</b></center>
+        
+        <br>
+        
+        <i>pub: 10.11.2022</i>
+         
+    </section>
+    <section class="info">
+      
+        <a href="../tags/math.html">math</a>, <a href="../tags/cryptography.html">cryptography</a>, <a href="../tags/papers.html">papers</a>
+      
+      
+        | [under review]
+      
+    </section>
+    <section>
+        <h4 id="brief">Brief</h4>
+<p>Say What Now (SWN) is a retroactively insecure cryptographic protocol, which implements the behavior of broadcast only protocols (e.g. radio, IRC) in a system where at least one ‘valid’ record of transmission exists.</p>
+<h4 id="terms">Terms</h4>
+<p>For the rest of this document, we refer to generalised terms which have a specialised meaning within this context. We use ‘true’ to refer to the ‘correct’ record of a transmission. A transmission is the chain of broadcasted packets. We use ‘valid’ to describe a cryptographically valid transmission record. <em>It is implied that the ‘true’ record is ‘valid’, but only one ‘valid’ record is ‘true’.</em> Gates are individual cycles of the general form.</p>
+<h4 id="rationale">Rationale</h4>
+<p>By degrading the security of past gates, we are able to achieve the intended functionality. We implement a ‘buffer’ of cryptographically ‘true’ packets, which are the only provably valid packets for their respective cryptographic identities. As the ‘head’ of the transmission extends, these cryptographic identities are intentionally leaked. This removes the provability of any packets with the same identity; thereby reducing them to <strong>a</strong> valid transmission history. We apply this scheme to reduce the overhead of shared network storage when applied to a distributed network, such as <a href="https://openconcord.org">[O]concord</a>. It allows us to remove all but the head layer of the graph from shared network storage, which is used to verify the histories of participating peers.</p>
+<h4 id="general-form">General Form</h4>
+<p><span class="math display">\[
+\text{let}
+\left\{
+\begin{align}
+&amp;E_y (x),\space y\in kp\text{: $x$ encrypted with }y \\
+&amp;kp(x),\space x \in\mathbb{Z}_{\geq0} = \{pub_x, pri_x\}\text{: keypair on index }x \\
+&amp;A\sqcup_dB\space=\space(A\sqcup d\sqcup B)\text{: concat with delimiter }d \\
+&amp;c\text{: message content} \\
+&amp;m\in\mathbb{Z}_{\geq0}\text{: shift distance}
+\end{align}
+\right .
+\]</span> We form the packet <span class="math inline">\(P\)</span> with the function <span class="math inline">\(P_n\)</span>, where <span class="math inline">\(n\)</span> is the gate index. <em>Note that <span class="math inline">\(m\)</span> doesn’t have to be constant among gates, and it is implied that <span class="math inline">\(n\in\mathbb{Z}_{\geq0}\)</span></em>. <span class="math display">\[
+P_n(c, \space kp):
+\left\{
+\begin{align}
+&amp;1 \leq n \\ 
+&amp;E_{kp(n)} (c \sqcup_d kp(n-m)_{pri} \sqcup_d kp([n+1]-m)_{pub}) \mid m \leq n \\
+&amp;E_{kp(n)} (c \sqcup_d kp(n+1)_{pub} \mid n &lt; m
+\end{align}
+\right .
+\]</span></p>
+<p>Unfortunately, this form needs to be jumpstarted with an initial public key on index <span class="math inline">\(0\)</span>; <span class="math display">\[P_0 = kp(0)_{pub}\]</span></p>
+<h4 id="application">Application</h4>
+<p>In our distributed system, (<a href="https://openconcord.org">[O]concord</a>), we need to retain a network ‘head’ (HEAD), which corresponds to the uppermost layer of the network’s graph. By leveraging the cryptographic scheme presented in SWN, we’re able to dramatically reduce the size of the required HEAD, and thus reduce overhead.</p>
+    </section>
+</article>
+
+        </main>
+
+        <footer>
+          <a href="https://notu.dev/notes/rss.xml">RSS</a>
+          <a href="https://notu.dev/notes/atom.xml">Atom</a>
+          Site Compiler/<a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>
