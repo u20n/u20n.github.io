@@ -5,41 +5,17 @@ published: 2022-04-14
 tags: math, physics, astro
 status: incomplete
 ---
-
-### Section List
-- overview & necessary disclaimer
-- degredation of accuracy and acceptable degrees
-	- interactions of the 3D
-	- physical interactions between bodies
-	- acceptable degrees of error
-- time as an influence
-	- time as a meter
-	- 4d in its interactions with the aforementioned 3d system
-
 ### Overview
-In the pursuit of a $\underline{\text{workable}}$ platform to simulate an approximate universe, obviously a very large endeavor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually *accurately* simulating the entire universe is a foolish task. This is mainly presented as a thought exercise.
+In the pursuit of a workable platform to simulate an approximate universe, obviously a very large endeavor, I seek to understand and condense the interactions between bodies in space, and formulate it to a set of functions and variables to represent any encounter between two bodies in space. Actually *accurately* simulating the entire universe is a foolish task. This is mainly presented as a thought exercise.
 
 ### Degradation of Accuracy and Acceptable Degrees
-**... in a simulated system**
+All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity; $F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}$
 
-All bodies of some mass have impact on the movements of the others. While discounting this below a certain threshold might serve to reduce the overall complexity of the calculus; e.g. $$F_x : \{(F_x\prec b) \nless \lfloor b_z - t\rfloor \}$$
-
-> Where $x$ is measure of influence[^smol], $t$ is some threshold, $z$ is relative gravitational force (in this context of $b$) taken at constant distance, and $F_x$ is a set of all influential $b$, $\forall$ bodies $b$ of $B$. It is implied that $F_x \subset B$.
+> Where $x$ is some measure of influence[^smol], $t$ is some threshold, $z$ is relative gravitational force (in this context of $b$) taken at constant distance, and $F_x$ is a set of all influential $b$, $\forall$ bodies $b$ of $B$. It is implied that $F_x \subset B$.
 
 > *While I take the influence as a floored number (assumed at $10^0$), any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$.*
 
 This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_x \prec b$ and $b_x$; it may (dependent on contents of $B$) create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a stable relational system[^eventually]. This is bad because it's boring.
-
-----
-
-We can attempt to create a buffer set between all bodies $b$ and what we'd consider influential bodies $F_x(b)$.
-
-Create a set $N_x$ (null $x$), and take the greatest of that set, and then push it up to $F_x$.
-$$e : N_x \begin{cases} e \notin F_x\\ e \exists! \in N_x \\e \top\lgroup N_x\rgroup \end{cases}$$ 
-$$ N_x = (N_x - e)$$
-$$ e \to F_x $$
-
-This just pushes the slip in accuracy one level down; there's now a slip of threshold in each calculation: given that the threshold is being set and then ignored for one body each iteration, as $|N_x|$ decreases, so does the legitimacy of the threshold - for enough bodies that have been excluded, $N_x = \emptyset$. This could be solved by setting a hard limit on how many former $N_x$ bodies can populate $F_x$, but then you may as well just lower the threshold enough to consider those bodies in $F_x$ originally.
 
 ---- 
 
@@ -57,9 +33,7 @@ This is the problem with binary generation of 'valid' bodies; the necessary excl
 
 This does mean most of the fun is sucked out of the exercise, but at least the micro of how exactly to interact smaller bodies (or particles, if we're literally micro) within these monolithic zones of influence. Oh, and we can spice things up with time.
 
-##### Time as an Influence 
-**...(and Willing Participant)**
-
+### Time as an Influence 
 Given that Einsteinian physics is a cooler system[^trustme], time is going to be considered with this simulation. To help myself visualize the 4th dimension, and to succinctly explain my rationale, a *simple* metaphor will be used[^flame]. Imagine, if you will, the 4th dimension as a photo camera. A still frame is taken of the 3rd dimension[^still]; these images, overlaid in order, become a body's experience of the 4th dimension. Time, in this system, exists as the frame-rate of the camera; the closer to light speed a body is, the slower its relative time. In our metaphor, this would be represented as the gaps between each frame.
 
 ---
@@ -69,7 +43,6 @@ Given that Einsteinian physics is a cooler system[^trustme], time is going to be
 [^theysay]: *I don't know that, but I assume that it's the conclusion that others have also come to.*
 
 [^smol]: This can also be considered the index of any $b$; given that $F_x$ is sorted.
-[^notation]: This notation is pretty spooky; essentially that there exists $\gt1$ of $x$ for all $x : F_x$.
 [^eventually]: This is a little misleading; if the relational force is the same across the entire system, nothing will ever move out of the *perfect* sequence in any substantial way without external force.
 [^flame]: This disclaimer means you can't yell at me on twitter. Acceptance of this wavier of your right to flame me online will be the continued reading of this footnote.
 [^still]: Without the 4th dimension, the 3d dimension has no concept of time, so it kind of just exists without concrete, well, time. Taking a still requires the concept of time (via reflection), and so I consider this precis valid, while admittedly marginally confusing.
