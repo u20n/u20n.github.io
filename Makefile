@@ -1,9 +1,2 @@
-
-
-recompile=stack exec site rebuild
-
-static:
-	cd hakyll; $(recompile)
-
-rebuild:
-	cd hakyll; stack build; $(recompile) 
+default:
+	./s3g.out
