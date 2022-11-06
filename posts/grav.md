@@ -1,6 +1,6 @@
 ---
-title: headaches w/ gravity
-abrv-title: uni.sim
+heading: headaches w/ gravity
+title: uni.sim
 published: 2022-04-14
 tags: math, physics, astro
 status: incomplete
@@ -62,8 +62,12 @@ This does mean most of the fun is sucked out of the exercise, but at least the m
 
 Given that Einsteinian physics is a cooler system[^trustme], time is going to be considered with this simulation. To help myself visualize the 4th dimension, and to succinctly explain my rationale, a *simple* metaphor will be used[^flame]. Imagine, if you will, the 4th dimension as a photo camera. A still frame is taken of the 3rd dimension[^still]; these images, overlaid in order, become a body's experience of the 4th dimension. Time, in this system, exists as the frame-rate of the camera; the closer to light speed a body is, the slower its relative time. In our metaphor, this would be represented as the gaps between each frame.
 
+---
+**Footnotes**
+
 [^trustme]: (Source: Trust me bro)
 [^theysay]: *I don't know that, but I assume that it's the conclusion that others have also come to.*
+
 [^smol]: This can also be considered the index of any $b$; given that $F_x$ is sorted.
 [^notation]: This notation is pretty spooky; essentially that there exists $\gt1$ of $x$ for all $x : F_x$.
 [^eventually]: This is a little misleading; if the relational force is the same across the entire system, nothing will ever move out of the *perfect* sequence in any substantial way without external force.

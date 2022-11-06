@@ -1,6 +1,6 @@
 ---
-title: Influence and Magic
-abrv-title: inf.mag
+heading: Influence and Magic
+title: inf.mag
 published: 2022-06-16
 tags: theory, religion, term paper
 status: complete

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>creating a tiny big number library</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
+    <!-- latex -->
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style/default.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+      <home><a href="index.html">~/</a></home>
+      <back><a href="../">../</a></back>
+      <op><a href="posts/op.html">!op</a></op>
+      </nav>
+    </header>
+    <h1></h1> 
+    <authors>
+      
+    </authors>
+    <br>
+    <pub>pub: 2022-03-24</pub> | [incomplete]
+    <br>
+    <ul class="tags">
+      <li class="tag"><a href="https://notu.dev/notes/math.html">.math</a></li>
+
+    </ul>
+    <text>
+      
+<br>
+
+<br>
+<h4>Tiny Big Number Lib - Background</h4>
+<br>
+Tiny Big Number Lib was written so that I could do physics projects and other large simulations in C++ without a huge amount of dependency overhead. It aims to implement the \(\underline{\text{bare minimum}}\) necessary to do these calculations.
+<br>
+
+<br>
+<h3>Implementation Notes + Design Decisions</h3>
+<br>
+<h5>big vs signed_big</h5>
+<br>
+While the initial methods were able to just used an aliased vector of unsigned integers; <code>using big = std::vector&lt;unsigned int&gt;;</code> as soon as subtraction was being added, it made sense to implement some form of signing. As I'm doing my best to keep the library as 'vanillia' as possible, this was achieved by aliasing a tuple of a bool and a big to <code>signed_big</code> A simple translation namespace was created; <code>unpack</code>for QoL. It may make sense later to form a standardised <code>struct</code>model, but for now this will suffice. 
+<br>
+
+    </text> 
+    <footer><a href="https://notu.dev/notes/rss.xml">RSS</a> <a href="https://notu.dev/notes/atom.xml">Atom</a> (i &lt;3 <a href="https://github.com/u20n/s3g">s3g</a>)</footer>
+  </body>
+</html>
