@@ -1,9 +1,9 @@
 ---
 heading: it's ok to be elitist
 title: 1337
-published: 
+published: 12.03.2022 
 tags: theory
-status: incomplete
+status: complete
 ---
 
 ## Preamble
