@@ -47,6 +47,7 @@ h3 {
   text-align: left; 
   color: #7B6B43;
 }
+
 .sectionlist {
   color: #806443;
   margin-left: 10%;
@@ -74,15 +75,14 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+
 pub {
   font-size:1.4rem;
   font-style:italic;
   color:#BABF95;
 }
 
-
-.logo a {
- font-weight:bold;
- color:#BABF95;
- text-decoration:none
+.tags li {
+  display: inline;
+  list-style: none;
 }

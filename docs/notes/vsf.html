@@ -38,11 +38,11 @@ For the last ~2 years, as I've been migrating my workflow to align with the 'les
 <br>
 <h3>solution(s)</h3>
 <br>
-The only time that I <b>need</b>scrolling in my terminal emulator is when inspecting make/gcc build output. Every other tool has scroll functionality encompassed within; vim, gdb, man, etc. Patching this into ST is unnecessary<sup><a href="#scroll">scroll</a></sup>; given that I don't need this functionality for any other tool. A simple solution is to alias <code>vmake</code>(verbose make) to a <code>less</code>command pipe; <code>alias vmake='less &lt; &lt;(make 2&gt;&amp;1)'</code>^cmd]. 
+The only time that I <b>need</b> scrolling in my terminal emulator is when inspecting make/gcc build output. Every other tool has scroll functionality encompassed within; vim, gdb, man, etc. Patching this into ST is unnecessary<sup><a href="#scroll">scroll</a></sup>; given that I don't need this functionality for any other tool. A simple solution is to alias <code>vmake</code> (verbose make) to a <code>less</code> command pipe; <code>alias vmake='less &lt; &lt;(make 2&gt;&amp;1)'</code><sup><a href="#cmd">cmd</a></sup>. 
 <br>
 
 <br>
-We can expand this functionality to nondefault <code>make</code>commands with UNIX style piping; simply alias <code>'less&lt; &lt;($0 2&gt;&amp;1)'</code>as appropriate. <b>Most commands can be piped to <code>less</code>natively</b> <code>make</code>was the outlier. It would initially output correctly, but then it (or <code>less</code> I'm not sure) would wipe the output.
+We can expand this functionality to nondefault <code>make</code> commands with UNIX style piping; simply alias <code>'less&lt; &lt;($0 2&gt;&amp;1)'</code> as appropriate. <b>Most commands can be piped to <code>less</code> natively</b>; <code>make</code> was the outlier. It would initially output correctly, but then it (or <code>less</code>, I'm not sure) would wipe the output.
 <br>
 
 <br>
