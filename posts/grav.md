@@ -13,17 +13,13 @@ All bodies of some mass have impact on the movements of the others. While discou
 
 > Where $x$ is some measure of influence[^smol], $t$ is some threshold, $z$ is relative gravitational force (in this context of $b$) taken at constant distance[^distance], and $F_x$ is a set of all influential bodies $b$, $\forall \space b \in B$. It is implied that $F_x \subset B$.
 
-> *While I take the influence as a floored number, any variation (the one I primarily consider is $\lfloor ... \rceil$) suffices; as long as it is constant across $x$. Regardless, the slip in accuracy is required for non head-spin-inducing numbers.*
+> *I take the influence as a floored number to reduce the possiblity of 'jumps' in attraction; scalling this floor to $10^x$ allows for degrees of accuracy. Regardless, the slip in accuracy is required for non head-spin-inducing numbers.*
 
 This necessary exclusion of bodies would eventually create a slip in accuracy beyond the (acceptable) marginal degree. Another flaw is the inclusion of equal values of $x$ for $F_x \prec b$ and $b_x$; it may (dependent on contents of $B$) create a plateau of $F_x$, and given $\forall \space x \mid x \space \notin F_x$, a stable relational system[^eventually]. This is bad because it's boring.
 
----- 
+---
 
 It may make sense to impose some sense of *inherited* order on the actual count of bodies in the $F_x$ set, but that would only push the slip further down, rather than solve it. Almost all solutions have this slip, and hence we must account for the degradation of accuracy, and the acceptable degrees of error.
-
-One solution I'm considering is the creation of zones of attraction between sets of $F_x$. Creating a sorted 3 dimensional vector of all sets of $F_x$ could enable the pseudo sorting of these zone of attraction without actually attaching any explicit tag to each set.
-
-> But wait, that's just what everyone else does.[^theysay]
 
 Ensuring sane degrees of accuracy necessitates consideration of appropriate scope; if at great enough distance that $F_x$ begins to exclude bodies and thus create $N_x \mid B_x \notin F_x$, the entire gravitation force of $F_x$ becomes monolithic (when considered against other bodies, including other $F_x$).
 One way to retain the 'naturality' of the generation of $F_x$ would be to scope interactions of $b \in F_x$ as $b \in N_x$, but within the monolithic form of $F_x$; e.g. $F_x(b) \to B(F_x) \mid \{F_x(b)\dots\}$.
@@ -40,7 +36,6 @@ Given that Einsteinian physics is a cooler system[^trustme], time is going to be
 **Footnotes**
 
 [^trustme]: (Source: Trust me bro)
-[^theysay]: *I don't know that, but I assume that it's the conclusion that others have also come to.*
 [^distance]: This (really) should be the distance between $F_x \prec b$ and $b$.
 [^smol]: This can also be considered the index of any $b$; given that $F_x$ is sorted.
 [^eventually]: This is a little misleading; if the relational force is the same across the entire system, nothing will ever move out of the *perfect* sequence in any substantial way without external force.
