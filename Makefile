@@ -1,2 +1,5 @@
-default:
-	cd /home/uton/code/tools/s3g; ./s3g.out; cd /home/uton/code/website;
+default: clean
+	sh build.sh
+
+clean:
+	rm -r notes/cache/* docs/notes/*
