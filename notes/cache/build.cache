@@ -1,7 +1,3 @@
-file: op
-ext: status
-date: 2000-01-01
----
 heading: it's ok to be elitist
 file: 1337
 ext: ism
@@ -17,19 +13,16 @@ tag: math
 tag: game theory
 status: incomplete
 ---
-heading: simulating bodies
-file: uni
-ext: sim
-published: 2022-04-14
-tags: math, physics, astro
-status: incomplete
----
 heading: Influence and Magic
 file: inf
 ext: mag
 published: 2022-06-16
 tags: theory, religion, term paper
 status: complete
+---
+file: op
+ext: status
+date: 2000-01-01
 ---
 heading: Working Notes: Tamuz
 file: tamuz
@@ -46,6 +39,13 @@ status: incomplete
 heading: tiny tunnel chat
 file: ttc
 ext: crypt
+status: incomplete
+---
+heading: simulating bodies
+file: uni
+ext: sim
+published: 2022-04-14
+tags: math, physics, astro
 status: incomplete
 ---
 title: achieving vanilla suckless scroll functionality
