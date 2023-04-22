@@ -1,0 +1,17 @@
+body {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 140%;
+  font-family: cursive;
+
+  background: #6d6875; 
+  color: #c9a6ad;
+}
+h1 {
+  color: #e5989b;
+}
+a {
+  color: #ffb4a2
+}
