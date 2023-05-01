@@ -6,12 +6,12 @@ body {
   font-size: 140%;
   font-family: cursive;
 
-  background: #6d6875; 
-  color: #c9a6ad;
+  background: black; 
+  color: white;
 }
 h1 {
-  color: #e5989b;
+  color: grey;
 }
 a {
-  color: #ffb4a2
+  color: red;
 }
