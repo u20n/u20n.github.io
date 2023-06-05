@@ -1,12 +1,17 @@
 <rss version="0.92">
 <channel>
-<title>txt://u2on</title>
-<description>Collected Writing</description>
-<link>https://www.notu.dev/txt</link>
+<title><![CDATA[<i>Why how you vote matters more than who you vote for</i>]]></title>
+<link><![CDATA[<a href="txt/voting.txt">voting.txt</a>]]></link>
+<description><![CDATA[]]></description>
 <item>
-<title><![CDATA[Blurbs -- Voting]]></title>
-<link><![CDATA[https://www.notu.dev/txt/voting]]></link>
-<description><![CDATA[      <i>Voting is important; not to 'win', but rather for the participation in the process.</i>      <p>Voting as honest participation in the process is 'positive' voting; that is, voting in favor of legistlation that you holistically agree with.</p>      <p> Voting to stop the 'other side' from success is 'negative' voting; this generally includes intentionally deadlocking legislation or candidacy for office.</p>            <b>Majoritarian electoral systems corrupt the meaning of voting through 2 major processes:</b>      <ol type="1">        <li>The consolidation of voters</li>        <li>The reinforcement of 'negative' voting</li>      </ol>      <p>These form a series of run-off processes, which serve to further reinforce the two major processes.</p>       <p>In no particular order:</p>      <ol type="a">        <li>The precipitation of policy and identity ambiguity</li>        <li>Legislative deadlock in systems with delayed terms</li>        <li>The loss of the moderates</li>        <li>The normalisation of advocacy for extreme policy</li>      </ol>      <p>Big parties formed via the consolidation of voters through 'negative' voting are incentivised to cater to the extremes of their general alignment. These extreme voters have no qualms about voting 'positively'; consequently, their voting patterns inspire the opposing moderates to vote 'negatively'. They thus form the crucial margin for large parties; they serve to keep the moderates in check, while providing the literal margin for election. Extreme policy is accordingly promoted to attract these extreme voters, and the moderates are relegated to an infinite loop of 'negative' voting.</p>      <p>There will be growing pains as the moderates play an increasingly high-stakes game of chicken, but the only intra-process reform possible is enacted through <b>voting 'positively'</b>.</p>      <hr>      <i>Last Edit: <date>28/05/23</date></i>      ]]></description>
+<title><![CDATA[<i>The means to an end is often the end itself</i>]]></title>
+<link><![CDATA[<a href="txt/ends.txt">ends.txt</a>]]></link>
+<description><![CDATA[]]></description>
+</item>
+<item>
+<title><![CDATA[<i>Banning books bad, scientists now say</i>]]></title>
+<link><![CDATA[<a href="txt/books.txt">books.txt</a>]]></link>
+<description><![CDATA[]]></description>
 </item>
 </channel>
 </rss>
