@@ -1,8 +1,13 @@
 <rss version="0.92">
 <channel>
+<title><![CDATA[<i>Writing</i>]]></title>
+<link><![CDATA[<a href="txt.xml">RSS</a>]]></link>
+<description><![CDATA[<u>Collected writing</u>]]></description>
+<item>
 <title><![CDATA[<i>Why how you vote matters more than who you vote for</i>]]></title>
 <link><![CDATA[<a href="txt/voting.txt">voting.txt</a>]]></link>
 <description><![CDATA[]]></description>
+</item>
 <item>
 <title><![CDATA[<i>The means to an end is often the end itself</i>]]></title>
 <link><![CDATA[<a href="txt/ends.txt">ends.txt</a>]]></link>
