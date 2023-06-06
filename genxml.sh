@@ -10,9 +10,9 @@ for t in docs/txt/*
 do
   echo "<item>"
   read -r title < $t
-  echo "<title>!CDATA[[$title]]</title>"
-  echo "<link>www.notu.dev/txt/$(basename $t .txt)</link>"
-  echo "<desc>!CDATA[[$(cat $t | tr -d '\n')]]</desc>"
+  echo "<title>$title</title>"
+  echo "<link>https://www.notu.dev/txt/$(basename $t .txt)</link>"
+  echo "<desc><![CDATA[$(cat $t | tr -d '\n')]></desc>"
   echo "</item>"
 done
 
