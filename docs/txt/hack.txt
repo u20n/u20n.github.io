@@ -1,8 +1,9 @@
 Hacking: The penult step of simplicity
 ====================================
 
-That sounds rather contradictory, doesn't it? Hacking, the act of cobbling together solutions from unintentional parts, would be the antithesis of simple, elegant solutions. Ceteris paribus, hacking is the refinement of bloated systems. A hacker can't help (or maybe he can) an inefficent part; the true art is the complete malleability of rigid parts.
-Hacking is the much needed precusory work to a complete solution. Once you strip away the superfluous, you are able to truly asses the nature of the solution.
+That sounds rather contradictory, doesn't it? Hacking, the act of cobbling together solutions from unintentional parts, would be the antithesis of simple, elegant solutions. A hacker can't help (or maybe he can) an inefficent part; the true art is the complete malleability of rigid parts.
+
+Hacking is the much needed precusory work to a complete solution. Once you strip away the superfluous, you are able to truly assess the nature of the solution.
 Generally one would;
 1. Create a prototype
 2. Bug test
