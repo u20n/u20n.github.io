@@ -34,6 +34,41 @@ Emotional thinking has become acceptable justifiaction for the parties of the Un
 Last Edited: 06/03/23 ]]></description>
 </item>
 <item>
+<title>Hacking: The penult step of simplicity</title>
+<link>https://www.notu.dev/txt/hack.txt</link>
+<pubDate></pubDate>
+<description><![CDATA[Hacking: The penult step of simplicity
+====================================
+
+That sounds rather contradictory, doesn't it? Hacking, the act of cobbling together solutions from unintentional parts, would be the antithesis of simple, elegant solutions. Ceteris paribus, hacking is the refinement of bloated systems. A hacker can't help (or maybe he can) an inefficent part; the true art is the complete malleability of rigid parts.
+Hacking is the much needed precusory work to a complete solution. Once you strip away the superfluous, you are able to truly asses the nature of the solution.
+Generally one would;
+1. Create a prototype
+2. Bug test
+3. Bug fix
+4. goto #1
+
+Hacking gets you a non-zero amount of #1; you're necessarily doing less work.
+
+The astute observation is that hacking requires things to hack on, and that hacking is thus an intermediate step towards elegance. People break things all the time, hacking is just the profession. Hacking is the necessary coupling between different interations and intentions in programs. Good programs acknowledge this, and make the hackers' life easier (think the entirety of UNIX).
+
+
+Post Script
+===========
+Some jumbled graphical representations
+
+Typical coupling:
+Prototype -> Hack -> Elegance
+                  \____ Hack -> ...
+
+Hacking is a iterative processs:
+Hack -> ... -> Hack -> Elegance
+
+One man's elegance is another man's prototype:
+Prototype <-> Elegance
+           |_____ Hack -> Elegance]]></description>
+</item>
+<item>
 <title>Markdown sucks</title>
 <link>https://www.notu.dev/txt/md.txt</link>
 <pubDate>06/06/23</pubDate>
