@@ -36,7 +36,7 @@ Last Edited: 06/03/23 ]]></description>
 <item>
 <title>Hacking: The penult step of simplicity</title>
 <link>https://www.notu.dev/txt/hack.txt</link>
-<pubDate></pubDate>
+<pubDate>06/09/23</pubDate>
 <description><![CDATA[Hacking: The penult step of simplicity
 ====================================
 
@@ -66,7 +66,10 @@ Hack -> ... -> Hack -> Elegance
 
 One man's elegance is another man's prototype:
 Prototype <-> Elegance
-           |_____ Hack -> Elegance]]></description>
+           |_____ Hack -> Elegance
+
+===================
+Last Edit: 06/09/23]]></description>
 </item>
 <item>
 <title>Markdown sucks</title>
