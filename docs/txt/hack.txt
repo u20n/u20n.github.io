@@ -30,5 +30,5 @@ One man's elegance is another man's prototype:
 Prototype <-> Elegance
            |_____ Hack -> Elegance
 
-===================
+-------------------
 Last Edit: 06/09/23
