@@ -12,7 +12,8 @@ do
   read -r title < $t
   echo "<title>$title</title>"
   echo "<link>https://www.notu.dev/txt/$(basename $t)</link>"
-  echo "<pubDate>$(tail -1 $t | cut -d' ' -f3)</pubDate>"
+  rawDate="$(tail -1 $t | cut -d ' ' -f3)"  
+  echo "<pubDate>$(date -d "$rawDate" +"%a, %d %b %Y")</pubDate>"
   echo "<description><![CDATA[$(cat $t)]]></description>"
   echo "</item>"
 done

@@ -1,8 +1,27 @@
 <rss version="0.92"><channel><title>txt://u2on</title><link>https://www.notu.dev/txt</link><description>Collected writings</description>
 <item>
+<title>Five Star Ratings are Functional</title>
+<link>https://www.notu.dev/txt/5star.txt</link>
+<pubDate>Sun, 11 Jun 2023</pubDate>
+<description><![CDATA[Five Star Ratings are Functional
+================================
+
+The ratio rating scheme counterintuitively provides an effective screen for technical competency. Assuming an honest rater (this is crucial), the ratio scheme forces underlying technical quality to be rated, rather than subjective taste.
+
+At the risk of adage (of this entire file);
+> Sally listens to a true crime podcast, tasteful murder. Sally finds the content too jovial, but ultimately assess it as not her cup of tea. Sally found nothing wrong with the hosts, the script, the sound design, or the concept. She's just ambivelent. Sally should rate the podcast ~4-5 stars for OK.
+
+This the a general modus operandi of reviewers in ratio rating schemes. I suspect that it's almost entirely due to vote inflation[0], but it also provides a good technical screen; only the most abhorrent will be rated low.
+
+[0]: 7 is the new 5
+
+=====================
+Last Edited: 06/11/23]]></description>
+</item>
+<item>
 <title>Genology in Desolation</title>
 <link>https://www.notu.dev/txt/artic.txt</link>
-<pubDate>05/29/23</pubDate>
+<pubDate>Mon, 29 May 2023</pubDate>
 <description><![CDATA[Genology in Desolation
 
 Each specimen has been honed into the best iteration of their own local extrema, in both enivronment and genology.
@@ -17,7 +36,7 @@ Last Edited: 05/29/23]]></description>
 <item>
 <title>Books should not be banned</title>
 <link>https://www.notu.dev/txt/books.txt</link>
-<pubDate>06/03/23</pubDate>
+<pubDate>Sat, 03 Jun 2023</pubDate>
 <description><![CDATA[Books should not be banned
 ==========================
 
@@ -34,9 +53,35 @@ Emotional thinking has become acceptable justifiaction for the parties of the Un
 Last Edited: 06/03/23 ]]></description>
 </item>
 <item>
+<title>Feeds</title>
+<link>https://www.notu.dev/txt/feeds.txt</link>
+<pubDate>Sat, 20 May 2023</pubDate>
+<description><![CDATA[Feeds
+=====
+
+Tweeter and other platforms that encourage short, hot takes have a debatable impact on the online ecosystem. That doesn't mean that they can't be done in a sane manner; running an RSS feed gives almost everything you could want.
+
+> What about 'interaction'?
+Narcissism aside, referential interaction can be done easily through links.
+
+Curated feeds also make echo chambers[0] less potent; excluding external curation, generally you have to seek out new feeds.
+Running a site is more complicated than running a feed; feeds are generally text based, which gives a nice layer of standardisation, while allowing individual sites to be unique in design.
+
+One exception is the 'quality' of different RSS/Atom standards; I prefer 0.92; it removes the character restrictions and required sub-elements of 0.91 (otherwise I'd use 0.91). Character restriction of course removes nuance for brevity, and thus drives engagment through essentially rage-bait. Individual feeds, with no curation algorithm, have no such need. Individual posts are only as long as the author (or reader) intends.
+
+RSS and other syndication feeds give power back to the reader; that is why walled gardens don't implement them overtly. You can, for instance, get the RSS feed of a youtube channel, but no where is that advertised; you have to go into the page source and do a text search. Odysee does implement this, even if they hide it in a drop-down menu (this should be next to the other buttons, perhaps next to subscribe?).
+
+Individuals who typically use social media may be less likely to adopt a syndication feed. People with a small following are less likely to be 'discovered' if their horrible takes aren't being pushed by a curation algorithm. Good. Social media has been a imitation of the library of Babel; this is not something to replicate. You can take your infinite monkeys with you; I've already read Shakespeare.
+
+[0]: "Echo chamber" has been diluted by online discourse. The term describes a curated feed which FURTHERS a descent into more extreme media.
+
+-----------------------
+Last Edited: 05/20/2023]]></description>
+</item>
+<item>
 <title>Hacking: The penult step of simplicity</title>
 <link>https://www.notu.dev/txt/hack.txt</link>
-<pubDate>06/09/23</pubDate>
+<pubDate>Fri, 09 Jun 2023</pubDate>
 <description><![CDATA[Hacking: The penult step of simplicity
 ====================================
 
@@ -75,7 +120,7 @@ Last Edit: 06/09/23]]></description>
 <item>
 <title>Markdown sucks</title>
 <link>https://www.notu.dev/txt/md.txt</link>
-<pubDate>06/06/23</pubDate>
+<pubDate>Tue, 06 Jun 2023</pubDate>
 <description><![CDATA[Markdown sucks
 ==============
 
@@ -102,7 +147,7 @@ Last Edited: 06/06/23]]></description>
 <item>
 <title>Voting is important; not to 'win', but rather for the participation in the process.</title>
 <link>https://www.notu.dev/txt/voting.txt</link>
-<pubDate>05/28/23</pubDate>
+<pubDate>Sun, 28 May 2023</pubDate>
 <description><![CDATA[Voting is important; not to 'win', but rather for the participation in the process.
 ===================================================================================
 

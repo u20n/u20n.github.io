@@ -1,0 +1,14 @@
+Five Star Ratings are Functional
+================================
+
+The ratio rating scheme counterintuitively provides an effective screen for technical competency. Assuming an honest rater (this is crucial), the ratio scheme forces underlying technical quality to be rated, rather than subjective taste.
+
+At the risk of adage (of this entire file);
+> Sally listens to a true crime podcast, tasteful murder. Sally finds the content too jovial, but ultimately assess it as not her cup of tea. Sally found nothing wrong with the hosts, the script, the sound design, or the concept. She's just ambivelent. Sally should rate the podcast ~4-5 stars for OK.
+
+This the a general modus operandi of reviewers in ratio rating schemes. I suspect that it's almost entirely due to vote inflation[0], but it also provides a good technical screen; only the most abhorrent will be rated low.
+
+[0]: 7 is the new 5
+
+=====================
+Last Edited: 06/11/23
