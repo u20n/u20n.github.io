@@ -1,0 +1,10 @@
+S/FTP -- The final frontier
+=========================
+S/FTP[0] is the best option for all file transfer operations. (anything but HTTP)
+
+Generally, 'websites' should be done as a PASV (duh), anonymous or login-less read only FTP servers. The core benefit[1] of S/FTP is that configuration is fairly arbitrary, and so I provide the above only as a suggestion.
+
+[0]: Note here that S/FTP refers to FTP and FTP via SSH.
+[1]: Not including the brevity and simplicity of the protocol.
+-----------------------
+Last Edited: 06/21/2023

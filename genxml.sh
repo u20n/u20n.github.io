@@ -6,7 +6,7 @@
 
 echo "<rss version=\"0.92\"><channel><title>txt://u2on</title><link>https://www.notu.dev/txt</link><description>Collected writings</description>"
 
-for t in docs/txt/*
+for t in docs/txt/*.txt
 do
   echo "<item>"
   read -r title < $t
