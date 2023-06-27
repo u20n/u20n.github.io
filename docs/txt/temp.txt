@@ -1,0 +1,21 @@
+Temperature and value
+========================
+
+Theory: We rank value by relevance to our base temperature.
+
+Valuable:
+- Cool
+- Chill
+- Cold
+- Hot
+- Fire
+
+Mediocre:
+- Lukewarm
+- Mid
+- Warm
+
+On further reflection, this is mostly an intrinsic property of ranking on a gradient.
+
+----------------------
+Last Edited 06/27/2023

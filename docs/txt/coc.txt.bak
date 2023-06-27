@@ -1,0 +1,15 @@
+Codes of conduct are diametrically opposed to libre software
+============================================================
+
+Meritocracy is crucial when evaluating contributions to software, especially libre ac gratis software. The individual who has created the code matters less than the quality of the code. This is established as a best practice because it is the best practice. Some of the most technically correct FOSS organisations are founded on this principle[0][1]. It is idiotic to assign any value to code beyond its functionality, and by extension correctness.
+
+Codes of conduct are generally bad; a key exception here is contribution guidelines, which serve to streamline the formatting of commits and bug reports. Codes of conduct remove the intrinsic impersonal evaluation of submitted code for nicities. One may compare it to a hamburger model of criticism[2]. In a domain such as software, it is incredibly important to have impersonal code, introducing codes of coduct for intrapersonal conduct regarding such code muddies the waters. You either have entirely personal code, or impersonable code. Personal code introduces countless negative behaviors as many menial things become personal;
+- Bug reports are now about the quality of YOUR personal code
+- Necessary design changes are now an evaluation of YOUR design
+- Troubleshooting is always the users fault, otherwise, it's YOUR fault
+
+Not to needlessly simplify the matter; but in a healthy envirnoment: your code isn't YOUR code. 
+
+[0]: <https://suckless.org/philosophy/>
+[1]: <https://www.openbsd.org/goals.html>
+[2]: <https://web.archive.org/web/20230329125440/https://hbr.org/2013/04/the-sandwich-approach-undermin>
