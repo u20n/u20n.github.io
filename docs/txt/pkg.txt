@@ -7,4 +7,6 @@ Knowledge of the source language (always C, we love C) isn't even required -- ge
 
 The only software that should be packaged is monolithic software -- nothing you can do, or you will do, will change the functionality and interface of the software. This mostly complies with UNIX; if you have a toolkit, and scripts to link the toolkit, why would you package the scripts that link the toolkit?
 
+[0] <https://github.com/bakkeby/st-flexipatch/tree/master>, <https://github.com/bakkeby/dwm-flexipatch>
+
 Last Edited: 07/21/2023
