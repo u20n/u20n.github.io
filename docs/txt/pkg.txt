@@ -1,0 +1,10 @@
+To package, or not to package?
+==============================
+
+Ocasionally I'll come across packages in pre-built distributions which are redundent. Any software that uses, for instance, substaintial modification via some header file. Part of me thinks that the work involved with patching such software to customise it functions as a litmus test for said software. But, people will find a way -- witness flexipatch[0], or any other helper program designed to remove the patching part of patching software.
+
+Knowledge of the source language (always C, we love C) isn't even required -- generally, just a few variable changes. In the event that something substaintial is being patched in, just a little bit of source knowledge is required. Almost entirely to the extent of "when does a function have scope". (Hint: it's the braces). You can lead a horse to water, but you can't make it drink. It is a little ridiculous, though. If the software is so archiac that you need another piece of software to patch the aforementioned software, then maybe the software, or you, is/are the problem.
+
+The only software that should be packaged is monolithic software -- nothing you can do, or you will do, will change the functionality and interface of the software. This mostly complies with UNIX; if you have a toolkit, and scripts to link the toolkit, why would you package the scripts that link the toolkit?
+
+Last Edited: 07/21/2023
