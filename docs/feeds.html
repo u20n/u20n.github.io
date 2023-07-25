@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feeds</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h2>Feeds -- Truly Simple?</h2>
+<hr>
+<p>
+With a new work computer running KISS linux[0], I was able to <em>drastically</em> reduce bloat on my system. The entirety of my online subscriptions are contained in RSS feeds, which I use to keep track of various blogs and video channels, among the other things people use RSS for.
+</p>
+<p>
+My normal daily driver, newsboat, has a very large list[1] of some very large dependencies. This wasn't acceptable, but there was happily a sub-section on the suckless "rocks" page[2]. Almost half of the entries were void, but the only promising one, sfeed, was larger than I thought necessary. So I wrote ufeed[3].
+</p>
+
+<p>
+The main issue with 'user' programs are that they are necessarily monolithic; they are mostly self contained, ala cat -v. Why does a RSS reader need to follow this pattern? The entire process is very straightforward:
+</p>
+
+<ol>
+<li>Loop over a list of URLS</li>
+<li>Fetch the XML content</li>
+<li>Parse the XML to be human (and machine) readable</li>
+<li>Present the readable information</li>
+<li>Further fetch the requested item</li>
+<li>Display the item as appropriate</li>
+</ol>
+
+<p>
+Most of these steps are out of scope for a hypothetical parser program. Why does it need to fetch the URLs, when this could be controlled by another script, which may, for instance, reference an FTP server, or some local copy, etc etc.
+</p>
+
+<p>
+In fact, only the third item is even within the scope of this program. This is also a very simple task. ufeed achieves it in about 31 CLOC.
+</p>
+
+<p>
+The solution is very simple -- ufeed consumes XML from stdin, and continues consuming until it reaches a targeted tag, at which point it outputs until it reaches the closing tag. There is no need for sub-strings, or even strings at all. This keeps ufeed microscopic (hence the name), CLOCing in at 31, and clocking in at ~15.8kB.
+</p>
+
+<p>
+The rest of the process is easily done in a simple shell script[3]. The command to produce complete output is:
+</p>
+<code>
+sh news.sh | cut -f2 | xargs elinks
+</code>
+<p>
+That's it. And the best part? It's complete. You can modify the usage of ufeed to best suit your needs. Exempli gratis; a file containing only video channels can be consumed for the podcast download link, then be opened with mpv.
+</p>
+
+<h2>Ref.</h2>
+<ul>
+<li><a href="https://kisslinux.org">[0]</a></li>
+<li><a href="https://github.com/newsboat/newsboat#dependencies">[1]</a></li>
+<li><a href="https://suckless.org/rocks/">[2]</a></li>
+<li><a href="https://gitlab.com/u2on/sh/-/blob/main/news.sh">[3]</a></li>
+</ul>
+<i>Last Edited: 07/18/2023 </i>
+</body>
+</html>
