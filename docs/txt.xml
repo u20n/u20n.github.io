@@ -2,7 +2,7 @@
 <item>
 <title>Five Star Ratings are Functional</title>
 <link>https://www.notu.dev/txt/5star.txt</link>
-<pubDate>Sun, 11 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Five Star Ratings are Functional
 ================================
 
@@ -21,7 +21,7 @@ Last Edited: 06/11/23]]></description>
 <item>
 <title>Those attracted to alternative platforms</title>
 <link>https://www.notu.dev/txt/alt.txt</link>
-<pubDate>Sat, 24 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Those attracted to alternative platforms
 ========================================
 
@@ -46,7 +46,7 @@ Last Edited: 06/24/2023]]></description>
 <item>
 <title>Genology in Desolation</title>
 <link>https://www.notu.dev/txt/artic.txt</link>
-<pubDate>Mon, 29 May 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Genology in Desolation
 
 Each specimen has been honed into the best iteration of their own local extrema, in both enivronment and genology.
@@ -61,7 +61,7 @@ Last Edited: 05/29/23]]></description>
 <item>
 <title>Books should not be banned</title>
 <link>https://www.notu.dev/txt/books.txt</link>
-<pubDate>Sat, 03 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Books should not be banned
 ==========================
 
@@ -80,7 +80,7 @@ Last Edited: 06/03/23 ]]></description>
 <item>
 <title>Codes of conduct are diametrically opposed to libre software</title>
 <link>https://www.notu.dev/txt/coc.txt</link>
-<pubDate>Tue, 27 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Codes of conduct are diametrically opposed to libre software
 ============================================================
 
@@ -103,7 +103,7 @@ Last Edited: 06/27/2023]]></description>
 <item>
 <title>Nations as social contracts</title>
 <link>https://www.notu.dev/txt/contracts.txt</link>
-<pubDate>Tue, 06 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Nations as social contracts
 ===========================
 
@@ -116,7 +116,7 @@ Last Edited: 06/06/2023]]></description>
 <item>
 <title>Feeds</title>
 <link>https://www.notu.dev/txt/feeds.txt</link>
-<pubDate>Tue, 20 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Feeds
 =====
 
@@ -142,7 +142,7 @@ Last Edited: 06/20/2023]]></description>
 <item>
 <title>S/FTP -- The final frontier</title>
 <link>https://www.notu.dev/txt/ftp.txt</link>
-<pubDate>Wed, 21 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[S/FTP -- The final frontier
 =========================
 S/FTP[0] is the best option for all file transfer operations. (anything but HTTP)
@@ -157,7 +157,7 @@ Last Edited: 06/21/2023]]></description>
 <item>
 <title>Hacking: The penult step of simplicity</title>
 <link>https://www.notu.dev/txt/hack.txt</link>
-<pubDate>Fri, 09 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Hacking: The penult step of simplicity
 ====================================
 
@@ -196,7 +196,7 @@ Last Edit: 06/09/23]]></description>
 <item>
 <title>Intelligence (ew)</title>
 <link>https://www.notu.dev/txt/int.txt</link>
-<pubDate>Thu, 20 Jul 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Intelligence (ew)
 =================
 
@@ -217,7 +217,7 @@ Last Edited: 07/20/2023]]></description>
 <item>
 <title>Magic ought to be free</title>
 <link>https://www.notu.dev/txt/magic.txt</link>
-<pubDate>Sun, 02 Jul 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Magic ought to be free
 ======================
 
@@ -237,7 +237,7 @@ Last Edited: 07/02/2023]]></description>
 <item>
 <title>Markdown sucks</title>
 <link>https://www.notu.dev/txt/md.txt</link>
-<pubDate>Tue, 06 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Markdown sucks
 ==============
 
@@ -264,7 +264,7 @@ Last Edited: 06/06/23]]></description>
 <item>
 <title>Nintendo -- Art and Morals</title>
 <link>https://www.notu.dev/txt/nintendo.txt</link>
-<pubDate>Tue, 18 Jul 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Nintendo -- Art and Morals
 ==========================
 
@@ -287,9 +287,26 @@ Last Edited:
 07/18/2023]]></description>
 </item>
 <item>
+<title>To package, or not to package?</title>
+<link>https://www.notu.dev/txt/pkg.txt</link>
+<pubDate></pubDate>
+<description><![CDATA[To package, or not to package?
+==============================
+
+Ocasionally I'll come across packages in pre-built distributions which are redundent. Any software that uses, for instance, substaintial modification via some header file. Part of me thinks that the work involved with patching such software to customise it functions as a litmus test for said software. But, people will find a way -- witness flexipatch[0], or any other helper program designed to remove the patching part of patching software.
+
+Knowledge of the source language (always C, we love C) isn't even required -- generally, just a few variable changes. In the event that something substaintial is being patched in, just a little bit of source knowledge is required. Almost entirely to the extent of "when does a function have scope". (Hint: it's the braces). You can lead a horse to water, but you can't make it drink. It is a little ridiculous, though. If the software is so archiac that you need another piece of software to patch the aforementioned software, then maybe the software, or you, is/are the problem.
+
+The only software that should be packaged is monolithic software -- nothing you can do, or you will do, will change the functionality and interface of the software. This mostly complies with UNIX; if you have a toolkit, and scripts to link the toolkit, why would you package the scripts that link the toolkit?
+
+[0] <https://github.com/bakkeby/st-flexipatch/tree/master>, <https://github.com/bakkeby/dwm-flexipatch>
+
+Last Edited: 07/21/2023]]></description>
+</item>
+<item>
 <title>A Day of Rest</title>
 <link>https://www.notu.dev/txt/rest.txt</link>
-<pubDate>Sun, 09 Jul 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[A Day of Rest
 
 You need not be religious to subscribe to a day of rest. A whole day of rest is incredibly beneficial in the typical 5-6 day workweek.
@@ -301,7 +318,7 @@ Last Edited: 07/09/2023]]></description>
 <item>
 <title>Temperature and value</title>
 <link>https://www.notu.dev/txt/temp.txt</link>
-<pubDate>Tue, 27 Jun 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Temperature and value
 ========================
 
@@ -327,7 +344,7 @@ Last Edited 06/27/2023]]></description>
 <item>
 <title>Voting is important; not to 'win', but rather for the participation in the process.</title>
 <link>https://www.notu.dev/txt/voting.txt</link>
-<pubDate>Sun, 28 May 2023</pubDate>
+<pubDate></pubDate>
 <description><![CDATA[Voting is important; not to 'win', but rather for the participation in the process.
 ===================================================================================
 
